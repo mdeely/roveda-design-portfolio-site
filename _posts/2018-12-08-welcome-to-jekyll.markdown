@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: default
 title:  "Hi I tyler"
 date:   2018-12-08 13:16:35 -0600
 categories: jekyll update

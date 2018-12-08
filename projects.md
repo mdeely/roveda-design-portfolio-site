@@ -1,7 +1,5 @@
 ---
-layout: project
-title: Project
+layout: projects
+title: Projects
+permalink: /projects/
 ---
-
-Other text here
-
