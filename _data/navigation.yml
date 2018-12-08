@@ -1,0 +1,9 @@
+primary:
+  - label: Home
+    url: "/"
+  - label: About
+    url: "/about"
+  - label: Contact us
+    url: "/contact-us"
+  - label: Tests
+    url: "/tests"

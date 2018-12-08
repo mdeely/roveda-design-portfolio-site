@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+		<title>{{ page.title }}</title>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/png" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="description"/>
+		<meta name="robots" content="index,follow">
+		<meta property="og:title" content="{{ title }}"/>
+		<meta property="og:url" content="{{ site.base_url | append: page.url | replace: ".html", "" | replace: "index", "" }}" />
+		<meta property="og:image" content="image" />
+		<meta property="og:description" content="description" />
+		<meta property="og:type" content="website"/>
+		<link rel="stylesheet" href="/css/styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="/assets/js/main.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+</head>

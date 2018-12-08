@@ -1,0 +1,7 @@
+{% assign primary = site.data.navigation.primary %}
+
+<nav>
+{% for item in primary %}
+	<a href="{{ item.url }}">{{ item.label }}</a>
+{% endfor %}
+</nav>
