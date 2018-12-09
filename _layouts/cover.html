@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{% for asset in page.assets %}
+<section class="cover">
+	<ul class="cover__list">
+		<li class="cover__list-item">
+			<img class="cover__image" src="/assets/img/{{ asset.filename }}">
+		</li>
+	</ul>
+</section>
+{% endfor %}

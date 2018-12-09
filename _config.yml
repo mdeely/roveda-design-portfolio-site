@@ -27,7 +27,7 @@ github_username:  jekyll
 collections:
   projects:
     output: true
-    permalink: "/portfolio/:name/"
+    permalink: "/projects/:name/"
 
 # Build settings
 markdown: kramdown
