@@ -1,0 +1,23 @@
+.about {
+	display: flex;
+	flex-direction: column;
+
+	.about__profile-img {
+		margin: 0 auto;
+		width: 250px;
+		height: auto;
+		margin-bottom: 60px;
+	}
+
+	.about__paragraph {
+		max-width: 800px;
+		line-height: 2;
+		font-size: 18px;
+		margin: 0 auto;
+		opacity: .6;
+
+		p {
+			margin-bottom: 60px;	
+		}
+	}
+}

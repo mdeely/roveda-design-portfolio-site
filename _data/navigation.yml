@@ -5,7 +5,5 @@ primary:
     url: "/projects"
   - label: About
     url: "/about"
-  - label: Contact us
-    url: "/contact-us"
-  - label: Tests
-    url: "/tests"
+  - label: Contact
+    url: "/contact"

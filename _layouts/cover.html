@@ -2,12 +2,23 @@
 layout: default
 ---
 
-{% for asset in page.assets %}
 <section class="cover">
 	<ul class="cover__list">
+		{% for asset in page.assets %}
 		<li class="cover__list-item">
-			<img class="cover__image" src="/assets/img/{{ asset.filename }}">
+			<div class="cover__image" style="background-image: url('../assets/img/{{asset.filename}}')"></div>
 		</li>
+		{% endfor %}
 	</ul>
+
+	<div class="cover__brand-info">
+		<img class="cover__logo" src="assets/img/logo__green-background.svg">
+		<h1 class="cover__title">Roveda design
+			<span class="cover__subtitle">Residential Design & Consulting</span>
+		</h1>
+	</div>	
+
+	<a class="social houzz" href="https://www.houzz.com/pro/webuser-659367927/roveda-design-inc">
+		<img src="/assets/img/houzz-logo.svg">
+	</a>
 </section>
-{% endfor %}

@@ -1,12 +1,21 @@
 {% assign primary = site.data.navigation.primary %}
 
-<nav>
+<nav class="{{page.layout}}">
+	<a class="logo" href="/">
+		<img src="/assets/img/logo__white-background.svg">
+	</a>
 	<ul>
 		{% for item in primary %}
-			<li>
-				<a href="{{ item.url }}">{{ item.label }}</a>
-			</li>
+			{% if item.url == "/" %}
+			{% else %}
+				<li>
+					{% if page.url contains item.url %}
+						<a class="active" href="{{ item.url }}">{{ item.label }}</a>
+					{% else %}
+						<a href="{{ item.url }}">{{ item.label }}</a>
+					{% endif %}
+				</li>
+			{% endif %}
 		{% endfor %}
 	</ul>
-
 </nav>

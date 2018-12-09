@@ -1,0 +1,18 @@
+$forest_green: #6C8672;
+$forest_green--shadow: #5C7161;
+
+// Color assignments
+$brand: $forest_green;
+$brand--shadow: $forest_green--shadow;
+
+// Layout
+$container_max_width: 1024px;
+
+// EFfects
+$shadow__logo: 0 2px 10px rgba(black, .12);
+$shadow__logo-hover: 0 6px 20px rgba(black, .08);
+
+//// Media queries
+$l-viewport: 1200px;
+$m-viewport: 780px;
+$s-viewport: 380px;
