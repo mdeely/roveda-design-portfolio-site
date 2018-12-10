@@ -9,7 +9,8 @@
 			{% if item.url == "/" %}
 			{% else %}
 				<li>
-					{% if page.url contains item.url %}
+					{% assign page_url = page.url | replace: "/","" | prepend: "/" %}
+					{% if item.url == page_url %}
 						<a class="active" href="{{ item.url }}">{{ item.label }}</a>
 					{% else %}
 						<a href="{{ item.url }}">{{ item.label }}</a>

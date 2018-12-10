@@ -1,8 +1,22 @@
 ---
 layout: default
 ---
-<section class="container">
-{% for project in site.projects %}
-	<a style="display: block; font-size: 50px;"href="{{ project.url }}">{{project.title}}</h1>
-{% endfor %}
+<section class="projects container">
+<!-- 	<ul class="project__list">
+		{% for project in site.projects %}
+			<li class="project__item">
+				<a class="project__anchor" href="{{ project.url }}">{{project.title}}</a>
+			</li>
+		{% endfor %}	
+	</ul>
+	<div class="project__visual" style="background-image: url('{{ site.projects[0].banner_image }}');"></div> -->
+
+	<ul class="project__list">
+		{% for project in site.projects %}
+			<li class="project__item" style="background-image: url('{{ project.banner_image }}')">
+				<a class="project__anchor" href="{{ project.url }}">{{project.title}}</a>
+				<div class="project__overlay"></div>
+			</li>
+		{% endfor %}	
+	</ul>
 </section>
