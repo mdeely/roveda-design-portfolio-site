@@ -9,23 +9,44 @@ section.projects {
 		align-items: center;
 
 		.project__item {
-			.project__title {
-				font-size: 40px;
-				margin-bottom: .5em;
-				color: $brand;
+			display: flex;
+			flex-direction: row-reverse;
+			align-items: center;
+			margin-bottom: 100px;
+
+			.project__info {
+				display: flex;
+				flex-direction: column;
+				transition: all .2s ease-in-out;
+
+				.project__title {
+					font-size: 40px;
+					margin-bottom: .5em;
+					color: $brand;
+				}
+
+				.project__description {
+					font-size: 16px;
+				}
+
+				.project__anchor {
+					margin-top: 2em;
+					display: inline-block;
+				    flex: auto;
+				    text-align: left;
+				    margin: 40px auto auto 0;
+				    margin-top: 40px;
+				}
 			}
 
-			.project__description {
+			.project__visual {
+				margin: 0 80px 0 0;
+				overflow: hidden;
+				border-radius: 4px;
 
-			}
+				.project__image {
 
-			.project__anchor {
-				margin-top: 2em;
-				display: inline-block;
-				padding: 18px 22px;
-				background-color: $brand;
-				color: white;
-				border-radius: 100px;
+				}
 			}
 		}
 	}

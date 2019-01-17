@@ -1,0 +1,19 @@
+.button,
+button {
+	display: inline-block;
+	padding: 18px 22px;
+	background-color: $brown;
+	color: white;
+	border-radius: 100px;
+}
+
+.button--small {
+	padding: 10px 16px;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.button--white {
+	color: $brown;
+	background-color: transparent;
+}

@@ -4,6 +4,6 @@ section:not(.cover) {
 
 @media screen and (min-width: $m-viewport) {
 	section:not(.cover) {
-		padding: 60px;
+		padding: 30px 60px 60px 60px;
 	}
 }

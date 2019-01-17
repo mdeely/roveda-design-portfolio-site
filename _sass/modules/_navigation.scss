@@ -4,18 +4,18 @@ nav {
 	left: 0;
 	right: 0;
 	top:0;
-	color: $brand--shadow;
+	padding-bottom: 50px;
+	color: $brown;
 	display: flex;
-	flex-direction: column;
-	padding-bottom: 70px;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: left;
 	background-color: #FFFFFF;
+	align-items: center;
 
 	.logo {
-		text-align: center;
+		text-align: left;
 		display: inline-block;
-		margin: 30px auto;
-		min-width: 100%;
+		margin: 30px;
 		transition: all .2s ease-in-out;
 
 		&:hover {
@@ -41,6 +41,8 @@ nav {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
+		margin-left: auto;
+		margin-right: 30px;
 
 		li {
 			margin-right: 15px;
@@ -57,7 +59,7 @@ nav {
 					bottom: -10px;
 					height: 2px;
 					width: 0%;
-					background-color: $brand;
+					background-color: $brown;
 					left: 0;
 					right: 0;
 					margin: auto;
@@ -89,9 +91,16 @@ nav {
 		position: fixed;
 		padding-top: 70px;
 		background-color: transparent;
+		justify-content: center;
+		flex-direction: column;
+		padding-bottom: 70px;
 
 		.logo {
 			display: none;
+		}
+
+		ul {
+			margin: initial;
 		}
 	}
 }
