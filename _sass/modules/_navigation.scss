@@ -1,5 +1,6 @@
 nav {
 	z-index: 999;
+	position: relative;
 	left: 0;
 	right: 0;
 	top:0;
@@ -40,14 +41,6 @@ nav {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-
-		&:hover {
-			li {
-				a {
-					opacity: .75;
-				}
-			}
-		}
 
 		li {
 			margin-right: 15px;

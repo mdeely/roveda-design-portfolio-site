@@ -4,11 +4,14 @@ body {
 }
 
 a {
-	font-size: 30px;
 	color: $brand--shadow;
 	text-decoration: none;
 }
 
 img {
 	max-width: 100%;
+}
+
+p {
+	@include paragraph-text();
 }

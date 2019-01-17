@@ -13,9 +13,15 @@ layout: default
 
 	<ul class="project__list">
 		{% for project in site.projects %}
-			<li class="project__item" style="background-image: url('{{ project.banner_image }}')">
-				<a class="project__anchor" href="{{ project.url }}">{{project.title}}</a>
-				<div class="project__overlay"></div>
+			<li class="project__item" ">
+				<div class="project__info">
+					<h2 class="project__title">{{project.title}}</h2>
+					<p class="project__description">{{project.description}}</p>
+					<a class="project__anchor" href="{{project.url}}">Learn more</a>
+				</div>
+				<div class="project__visual">
+					<img class="project__image" src="{{project.banner_image}}" alt="Image of {{project.title}}"></p>
+				</div>
 			</li>
 		{% endfor %}	
 	</ul>

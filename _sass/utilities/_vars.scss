@@ -16,3 +16,9 @@ $shadow__logo-hover: 0 6px 20px rgba(black, .08);
 $l-viewport: 1200px;
 $m-viewport: 820px;
 $s-viewport: 580px;
+
+@mixin paragraph-text() {
+	line-height: 2;
+	font-size: 18px;
+	opacity: .6;
+}

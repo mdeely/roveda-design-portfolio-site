@@ -152,7 +152,7 @@ Main components
   margin-left: -22px;
   margin-top: -22px;
   border-radius: 50%;
-  background: #dc717d url("/assets/img/cd-arrows.svg") no-repeat center center;
+  background: $brand url("/assets/img/cd-arrows.svg") no-repeat center center;
   cursor: move;
   box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
   opacity: 0;
@@ -164,7 +164,7 @@ Main components
 }
 .cd-handle.draggable {
   /* change background color when element is active */
-  background-color: #445b7c;
+  background-color: $brand__shadow;
 }
 .is-visible .cd-handle {
   opacity: 1;
