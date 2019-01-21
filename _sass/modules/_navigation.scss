@@ -6,11 +6,14 @@ nav {
 	top:0;
 	padding-bottom: 50px;
 	color: $brown;
-	display: flex;
-	flex-direction: row;
-	justify-content: left;
 	background-color: #FFFFFF;
-	align-items: center;
+
+	.container {
+		display: flex;
+		flex-direction: row;
+		justify-content: left;
+		align-items: center;
+	}
 
 	.logo {
 		text-align: left;
