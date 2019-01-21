@@ -1,0 +1,13 @@
+<div class="carousel__container">
+	<a href="#" class="carousel__previous"><i class="fas fa-chevron-left"></i></a>
+	<ul class="carousel__list">
+		{% for slide in site.projects %}
+			<li class="carousel__slide {% if forloop.first%}active{% endif %}" data-slideshow-index="{{forloop.index}}">
+				<div class="carousel__content">
+					<img src="{{slide.banner_image}}">
+				</div>
+			</li>
+		{% endfor %}
+	</ul>
+	<a href="#" class="carousel__next"><i class="fas fa-chevron-right"></i></a>
+</div>
