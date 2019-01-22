@@ -1,6 +1,13 @@
 {% include head.html %}
 {% include navigation.html %}
 
+  <section class="{{ page.layout }} container">
 	{{ content }}
+
+	{% for section in page.blocks %}
+	  {% include block-{{ section.template }}.html %}
+	{% endfor %}
+	
+  </section>
 
 {% include footer.html %}

@@ -44,7 +44,6 @@ $( document ).ready(function() {
 			if ( requestedSlide > slideCount ) {
 				requestedSlide = 1;
 			};
-
 		};
 
 		updateSlideshow(requestedSlide, activeSlide)

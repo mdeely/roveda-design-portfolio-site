@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<section class="projects container">
+<section class="{{page.layout}} container">
 <!-- 	<ul class="project__list">
 		{% for project in site.projects %}
 			<li class="project__item">
@@ -25,4 +25,9 @@ layout: default
 			</li>
 		{% endfor %}	
 	</ul>
+
+	{% for section in page.components %}
+		{% include block-{{ section.block }}.html %}
+	{% endfor %}
+
 </section>
