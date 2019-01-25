@@ -23,5 +23,10 @@ fields:
   label: layout
   hidden: true
   default: projects
+- type: blocks
+  name: blocks
+  label: blocks
+  template_types:
+  - slideshow
 pages:
 - _projects/test-project.md
