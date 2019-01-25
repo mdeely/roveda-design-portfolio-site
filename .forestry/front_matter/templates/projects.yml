@@ -24,13 +24,10 @@ fields:
   hidden: true
   default: projects
 - type: blocks
-  name: i_don_t_get_this
-  label: I don't get this
-  description: Wht is this
+  name: components
+  label: Components
+  description: Include components here like the slideshow
   template_types:
   - slideshow
-- type: blocks
-  name: ''
-  label: still not gettin
 pages:
 - _projects/test-project.md
