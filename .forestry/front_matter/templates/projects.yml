@@ -26,7 +26,6 @@ fields:
 - type: blocks
   name: blocks
   label: blocks
-  template_types:
-  - slideshow
+  template_types: []
 pages:
 - _projects/test-project.md
