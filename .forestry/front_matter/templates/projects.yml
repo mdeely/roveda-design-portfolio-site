@@ -23,3 +23,5 @@ fields:
   label: layout
   hidden: true
   default: projects
+pages:
+- _projects/test-project.md
