@@ -3,14 +3,17 @@ label: Slideshow
 hide_body: false
 is_partial: true
 display_field: testingblocks
-fields:
-- type: text
-  hidden: true
-  label: block
-  name: block
-- type: blocks
-  name: testingblocks
-  label: testingblocks
+- type: field_group_list
+  name: slideshow_item
+  label: Slideshow item
   config:
-    min: '1'
-    max: '7'
+    labelField: caption
+  fields:
+  - type: file
+    name: image_url
+    label: Image
+    hidden: false
+  - type: text
+    name: caption
+    label: caption
+    hidden: false
