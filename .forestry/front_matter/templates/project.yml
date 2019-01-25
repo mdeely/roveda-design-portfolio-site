@@ -22,11 +22,6 @@ fields:
   name: layout
   label: layout
   hidden: true
-  default: projects
-- type: blocks
-  name: blocks
-  label: blocks
-  template_types:
-  - carousel
+  default: project
 pages:
 - _projects/testual.md
