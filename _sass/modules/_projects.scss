@@ -5,7 +5,7 @@ section.projects {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: left;
 		align-items: center;
 
 		.project__item {
@@ -40,9 +40,15 @@ section.projects {
 			}
 
 			.project__visual {
+				$size: 300px;
 				margin: 0 80px 0 0;
 				overflow: hidden;
 				border-radius: 4px;
+				min-width: $size;
+				height: $size;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
 
 				.project__image {
 

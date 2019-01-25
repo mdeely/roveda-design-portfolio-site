@@ -19,9 +19,7 @@ layout: default
 					<p class="project__description">{{project.description}}</p>
 					<a class="project__anchor button" href="{{project.url}}">Learn more</a>
 				</div>
-				<div class="project__visual">
-					<img class="project__image" src="{{project.banner_image}}" alt="Image of {{project.title}}"></p>
-				</div>
+				<div class="project__visual" style="background-image: url('../{{project.banner_image}}')"></div>
 			</li>
 		{% endfor %}	
 	</ul>

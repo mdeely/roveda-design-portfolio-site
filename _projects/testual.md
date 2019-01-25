@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: default
 title: Testual
 description: 'no'
 banner_image: "/uploads/Foster_1_After-003.jpeg"
