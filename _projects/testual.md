@@ -16,6 +16,5 @@ components:
     caption: 'Caption #1'
   - image_url: "/uploads/Foster_1_After-001.jpg"
     caption: 'Caption #2'
-published: false
 
 ---
