@@ -1,6 +1,6 @@
 ---
 label: project
-hide_body: false
+hide_body: true
 is_partial: false
 fields:
 - type: text
@@ -29,4 +29,5 @@ fields:
   template_types:
   - carousel
 pages:
-- _projects/testual.md
+- _projects/gregory-1.md
+- _projects/anything-ave.md
