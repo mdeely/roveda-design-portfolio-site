@@ -2,7 +2,7 @@
 label: test
 hide_body: false
 is_partial: true
-display_field: thing
+display_field: image
 fields:
 - type: textarea
   config:
@@ -12,3 +12,11 @@ fields:
   label: THing
   name: thing
   description: description
+- type: color
+  name: color
+  config:
+    color_format: Hex
+  label: color
+- type: file
+  name: image
+  label: image
