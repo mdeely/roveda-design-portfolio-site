@@ -23,5 +23,11 @@ fields:
   label: layout
   hidden: true
   default: projects
+- type: blocks
+  name: i_don_t_get_this
+  label: I don't get this
+  description: Wht is this
+  template_types:
+  - slideshow
 pages:
 - _projects/test-project.md
