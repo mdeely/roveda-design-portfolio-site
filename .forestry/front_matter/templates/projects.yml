@@ -17,7 +17,7 @@ fields:
 - type: file
   name: banner_image
   label: Banner image
-  description: 'This will display on the cover page and Projects page'
+  description: This will display on the cover page and Projects page
 - type: text
   name: layout
   label: layout

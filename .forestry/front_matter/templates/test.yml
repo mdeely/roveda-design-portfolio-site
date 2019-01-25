@@ -1,0 +1,14 @@
+---
+label: test
+hide_body: false
+is_partial: true
+display_field: thing
+fields:
+- type: textarea
+  config:
+    wysiwyg: true
+    schema:
+      format: html
+  label: THing
+  name: thing
+  description: description
