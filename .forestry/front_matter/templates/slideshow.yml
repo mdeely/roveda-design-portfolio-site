@@ -2,8 +2,15 @@
 label: Slideshow
 hide_body: false
 is_partial: true
+display_field: testingblocks
 fields:
 - type: text
   hidden: true
   label: block
   name: block
+- type: blocks
+  name: testingblocks
+  label: testingblocks
+  config:
+    min: '1'
+    max: '7'
