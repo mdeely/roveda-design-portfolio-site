@@ -29,5 +29,5 @@ fields:
   template_types:
   - carousel
 pages:
-- _projects/testual.md
 - _projects/gregory-1.md
+- _projects/testual.md
