@@ -23,5 +23,9 @@ fields:
   label: layout
   hidden: true
   default: projects
+- type: include
+  name: what_does_this_mean
+  label: what does this mean
+  template: slideshow
 pages:
 - _projects/test-project.md
