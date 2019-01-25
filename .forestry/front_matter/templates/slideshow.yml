@@ -2,7 +2,7 @@
 label: Slideshow
 hide_body: false
 is_partial: true
-display_field: testingblocks
+display_field: slideshow_item
 fields:
 - type: field_group_list
   name: slideshow_item
