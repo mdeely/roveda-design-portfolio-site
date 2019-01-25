@@ -29,5 +29,8 @@ fields:
   description: Wht is this
   template_types:
   - slideshow
+- type: blocks
+  name: ''
+  label: still not gettin
 pages:
 - _projects/test-project.md
