@@ -1,0 +1,25 @@
+---
+label: project
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: textarea
+  name: description
+  label: Description
+  description: A description of the project.
+  config:
+    required: true
+- type: file
+  name: banner_image
+  label: Banner image
+  description: 'This will display on the cover page and Projects page'
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+  default: projects
