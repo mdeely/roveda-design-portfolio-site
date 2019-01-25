@@ -23,11 +23,5 @@ fields:
   label: layout
   hidden: true
   default: projects
-- type: blocks
-  name: components
-  label: Components
-  description: Include components here like the slideshow
-  template_types:
-  - slideshow
 pages:
 - _projects/test-project.md
