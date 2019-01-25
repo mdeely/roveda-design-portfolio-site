@@ -24,8 +24,8 @@ fields:
   hidden: true
   default: project
 - type: blocks
-  name: components
-  label: Components
+  name: blocks
+  label: Blocks
   template_types:
   - carousel
 pages:
