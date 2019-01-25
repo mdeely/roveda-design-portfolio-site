@@ -14,6 +14,5 @@ blocks:
   - image_url: "/uploads/Foster_1_After-003.jpeg"
     caption: this is a caption
 date: 2019-01-25 05:02:09 +0000
-published: false
 
 ---
