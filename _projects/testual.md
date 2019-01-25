@@ -10,5 +10,4 @@ blocks:
     caption: 'Caption #1'
 date: 2019-01-25 04:22:42 +0000
 published: false
-
 ---
