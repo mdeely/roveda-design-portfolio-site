@@ -1,0 +1,15 @@
+---
+label: Carousel
+hide_body: false
+is_partial: true
+fields:
+- type: field_group_list
+  label: Carousel
+  name: carousel
+  fields:
+  - type: file
+    name: image_url
+    label: Image
+  - type: text
+    name: caption
+    label: Caption
