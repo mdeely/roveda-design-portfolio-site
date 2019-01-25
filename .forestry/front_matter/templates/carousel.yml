@@ -4,8 +4,8 @@ hide_body: false
 is_partial: true
 fields:
 - type: field_group_list
-  label: Carousel
-  name: carousel
+  label: Slides
+  name: slides
   fields:
   - type: file
     name: image_url
