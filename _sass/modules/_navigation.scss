@@ -98,6 +98,10 @@ nav {
 		flex-direction: column;
 		padding-bottom: 70px;
 
+		.container {
+			justify-content: center;
+		}
+
 		.logo {
 			display: none;
 		}
