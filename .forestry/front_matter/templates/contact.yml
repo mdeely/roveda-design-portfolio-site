@@ -1,0 +1,17 @@
+---
+label: Contact
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+- type: text
+  name: permalink
+  label: Permalink
+- type: textarea
+  name: embed
+  label: embed
+  description: Paste embed code here.
+pages:
+- contact.md
