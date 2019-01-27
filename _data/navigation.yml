@@ -1,4 +1,4 @@
-primary:
+top_navigation:
   - label: Home
     url: "/"
   - label: Projects
