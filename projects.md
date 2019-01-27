@@ -3,7 +3,7 @@ layout: projects
 title: Projects
 permalink: "/projects"
 blocks:
-- template: project_list
+- template: project-list
   layout: basic
 
 ---
