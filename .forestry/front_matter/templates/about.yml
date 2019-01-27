@@ -1,0 +1,14 @@
+---
+label: About
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+- type: text
+  name: permalink
+  label: Permalink
+- type: file
+  name: proile_image
+  label: Profile image
