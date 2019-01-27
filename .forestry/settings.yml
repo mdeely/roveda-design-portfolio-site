@@ -13,6 +13,7 @@ sections:
   label: Pages
   create: all
   templates:
+  - basic
   - cover
   - about
   - contact
