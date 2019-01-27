@@ -4,10 +4,11 @@ hide_body: true
 is_partial: false
 fields:
 - type: text
-  name: title
-  label: Title
+  name: project_name
+  label: Project name
   config:
     required: true
+  description: Short title for your project.
 - type: textarea
   name: description
   label: Description
