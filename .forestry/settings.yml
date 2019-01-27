@@ -12,6 +12,11 @@ sections:
 - type: jekyll-pages
   label: Pages
   create: all
+  templates:
+  - cover
+  - about
+  - contact
+  - project
 - type: document
   path: _data/navigation.yml
   label: Navigation
