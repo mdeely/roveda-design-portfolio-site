@@ -1,6 +1,7 @@
 ---
 layout: cover
-title: Roveda Design
+title: Home
+company_name: Roveda Design
 subtitle: Residential Design & Consulting
 permalink: "/"
 cover_images:
