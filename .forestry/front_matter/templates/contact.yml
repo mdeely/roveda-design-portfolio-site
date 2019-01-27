@@ -16,6 +16,6 @@ fields:
   config:
     wysiwyg: true
     schema:
-      format: html
+      format: html-blocks
 pages:
 - contact.md
