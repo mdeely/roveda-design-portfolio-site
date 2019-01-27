@@ -1,6 +1,6 @@
 ---
 label: Contact
-hide_body: true
+hide_body: false
 is_partial: false
 fields:
 - type: text
@@ -13,5 +13,9 @@ fields:
   name: embed
   label: embed
   description: Paste embed code here.
+  config:
+    wysiwyg: true
+    schema:
+      format: html
 pages:
 - contact.md
