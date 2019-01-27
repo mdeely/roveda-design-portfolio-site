@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Gregory 1
+project_name: Gregory 1
 description: Lorem ipsum dolor sit amet, vix oporteat antiopam at, vel paulo signiferumque
   eu. Et eam petentium salutandi, nam atqui officiis cu. No duo tantas voluptatum,
   nam no tempor deseruisse, an fabulas laoreet adipisci eam. Qui in scripta ceteros
