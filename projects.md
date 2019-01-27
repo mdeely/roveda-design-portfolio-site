@@ -2,6 +2,8 @@
 layout: projects
 title: Projects
 permalink: "/projects"
-blocks: []
+blocks:
+- template: project_list
+  layout: basic
 
 ---
