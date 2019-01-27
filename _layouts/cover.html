@@ -7,13 +7,14 @@ layout: default
 	<ul class="cover__list">
 		{% for images in page.cover_images %}
 			<li class="cover__list-item">
-				<div class="cover__image {{ forloop.index }}" style="background-image: url('{{image.image_url}}')"></div>
+				<div class="cover__image {{ forloop.index }}" style="background-image: url('{{image}}')"></div>
 			</li>
 		{% endfor %}
 	</ul>
 
 	<div class="cover__brand-info">
-		<img class="cover__logo" src="assets/img/logo__green-background.svg">
+		<img class="cover__logo" src="{{ page.logo }}">
+<!-- 		<img class="cover__logo" src="{{ page.logo }} assets/img/logo__green-background.svg">-->
 		<h1 class="cover__title">{{ page.title }}
 			<span class="cover__subtitle">{{ page.subtitle }}</span>
 		</h1>
@@ -22,4 +23,5 @@ layout: default
 	<a class="social houzz" href="https://www.houzz.com/pro/rovedadesign/roveda-design-inc">
 		<img src="/assets/img/houzz-logo.svg">
 	</a>
+
 </section>
