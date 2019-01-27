@@ -2,6 +2,8 @@
 layout: default
 title: Projects
 permalink: "/projects"
-blocks: []
+blocks:
+- template: project-list
+  layout: basic
 
 ---
