@@ -1,9 +1,0 @@
-section:not(.cover) {
-	padding: 20px;
-}
-
-@media screen and (min-width: $m-viewport) {
-	section:not(.cover) {
-		padding: 30px 60px 60px 60px;
-	}
-}

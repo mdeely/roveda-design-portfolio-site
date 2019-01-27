@@ -1,5 +1,6 @@
 .contact {
 	display: flex;
+	@include default_margin();
 	
 	iframe {
 		margin: 0 auto;

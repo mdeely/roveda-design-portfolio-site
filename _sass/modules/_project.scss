@@ -1,4 +1,5 @@
 section.project {
+	@include default_margin();
 
 	.project__actions {
 		margin: 0 auto 20px auto;
