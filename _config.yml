@@ -31,8 +31,11 @@ collections:
 
 # Build settings
 markdown: kramdown
+url: "https://www.rovedadesign.com" # the base hostname & protocol for your site
+
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 sass:
   sass_dir: _sass

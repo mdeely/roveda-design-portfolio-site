@@ -1,5 +1,5 @@
 ---
 layout: contact
-title: Contact us
-permalink: /contact/
+title: Contact
+permalink: /contact
 ---

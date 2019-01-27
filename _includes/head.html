@@ -1,10 +1,13 @@
+{% assign info = site.data.site_information %}
+{% assign page_title = page.title | append: " | Roveda Design" %}
+
+
 <!doctype html>
 
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-		<title>{{ page.title }}</title>
+		<title>{{page_title}}</title>
 		<meta charset="utf-8">
 		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -23,10 +26,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="description"/>
 		<meta name="robots" content="index,follow">
-		<meta property="og:title" content="{{ title }}"/>
-		<meta property="og:url" content="{{ site.base_url | append: page.url | replace: ".html", "" | replace: "index", "" }}" />
-		<meta property="og:image" content="image" />
-		<meta property="og:description" content="description" />
+		<meta property="og:title" content="{{ page_title }}"/>
+		<meta property="og:url" content="{{ info.base_url | append: page.url | replace: ".html", "" | replace: "index", "" }}" />
+		<meta property="og:image" content="{{info.base_url}}{{info.seo_image}}" />
+		<meta property="og:description" content="{{info.seo_description}}" />
 		<meta property="og:type" content="website"/>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet">
 		<link rel="stylesheet" href="/css/styles.css">
