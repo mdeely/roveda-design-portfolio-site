@@ -32,3 +32,7 @@ $s-viewport: 580px;
 	font-size: 18px;
 	opacity: .6;
 }
+
+@mixin header-extra-large() {
+	font-size: 50px;
+}

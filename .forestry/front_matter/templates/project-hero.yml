@@ -8,3 +8,18 @@ fields:
   label: layout
   hidden: true
   default: basic
+- type: text
+  name: title
+  label: title
+- type: text
+  name: message
+  label: message
+- type: field_group
+  name: button
+  label: CTA
+  - type: text
+    name: text
+    label: text
+  - type: text
+    name: url
+    label: URL

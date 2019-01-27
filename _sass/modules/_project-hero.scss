@@ -2,5 +2,18 @@
 	background-color: $brand;
 	width: 100%;
 	height: 50vh;
+	max-height: 500px;
+	min-height: 200px;
 	margin-bottom: 30px;
+	padding: 100px $default_margin;
+	@include header-extra-large();
+	color: white;
+ 	text-align: center;
+
 }
+
+ // @media screen and (min-width: $s-viewport) {
+ // 	.project-hero {
+ // 		text-align: left;
+ // 	}
+ // }

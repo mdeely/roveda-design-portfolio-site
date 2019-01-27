@@ -1,3 +1,9 @@
-<section class="project-hero">
-	Hello there
+{% assign hero = section %}
+
+<section class="project-hero" style="background-image: url('{{ hero.image  }}')">
+	<div class="container">
+		<div class="project-hero__title">{{ hero.title }}</div>
+		<div class="project-hero__message">{{ hero.message }}</div>
+		<a href="{{ hero.button.url }}">{{ hero.button.text }}</a>
+	</div>
 </section>
