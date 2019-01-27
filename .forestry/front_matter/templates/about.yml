@@ -10,5 +10,5 @@ fields:
   name: permalink
   label: Permalink
 - type: file
-  name: proile_image
+  name: profile_image
   label: Profile image
