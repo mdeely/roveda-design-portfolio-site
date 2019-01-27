@@ -2,6 +2,8 @@
 layout: about
 title: About
 permalink: "/about/"
+proile_image: "/uploads/img-modified.jpg"
+profile_image: "/uploads/logo__green-background.svg"
 
 ---
 Roveda Design is a full-service architectural and building design firm specializing in interior renovations. We are exceptionally equipped to take projects of varying scope from concept through completion. Endeavoring to establish bespoke, timeless spaces of impeccable craft our goal is to create homes that lend a sense of grace and harmony to our client’s everyday lives.
