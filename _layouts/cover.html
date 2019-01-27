@@ -1,11 +1,11 @@
 ---
 layout: default
+permalink: page.permalink
 ---
 
 <section class="{{page.layout}}">
-
 	<ul class="cover__list">
-		{% for images in page.cover_images %}
+		{% for image in page.cover_images %}
 			<li class="cover__list-item">
 				<div class="cover__image {{ forloop.index }}" style="background-image: url('{{image}}')"></div>
 			</li>

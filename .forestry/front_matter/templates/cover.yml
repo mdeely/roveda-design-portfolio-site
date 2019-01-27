@@ -7,6 +7,9 @@ fields:
   name: logo
   label: Logo
 - type: text
+  name: permalink
+  label: Permalink
+- type: text
   name: title
   label: Title
   config:
