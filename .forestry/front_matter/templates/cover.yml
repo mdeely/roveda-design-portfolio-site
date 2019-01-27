@@ -3,6 +3,9 @@ label: Cover
 hide_body: true
 is_partial: false
 fields:
+- type: file
+  name: logo
+  label: Logo
 - type: text
   name: title
   label: Title
@@ -11,10 +14,6 @@ fields:
 - type: text
   name: subtitle
   label: subtitle
-- type: field_group_list
-  label: Cover images
+- type: image_gallery
   name: cover_images
-  fields:
-  - type: file
-    name: image_url
-    label: Image
+  label: Cover images
