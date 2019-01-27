@@ -1,0 +1,20 @@
+---
+label: Cover
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: text
+  name: subtitle
+  label: subtitle
+- type: field_group_list
+  label: Cover images
+  name: cover_images
+  fields:
+  - type: file
+    name: image_url
+    label: Image

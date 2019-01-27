@@ -1,5 +1,6 @@
 ---
 layout: cover
-title: index page
+title: Roveda Design
+subtitle: Residential Design & Consulting
 permalink: /
 ---

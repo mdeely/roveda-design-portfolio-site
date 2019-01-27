@@ -5,17 +5,17 @@ layout: default
 <section class="{{page.layout}}">
 
 	<ul class="cover__list">
-		{% for project in site.projects %}
+		{% for images in page.cover_images %}
 			<li class="cover__list-item">
-				<div class="cover__image {{ forloop.index }}" style="background-image: url('{{project.banner_image}}')"></div>
+				<div class="cover__image {{ forloop.index }}" style="background-image: url('{{image.image_url}}')"></div>
 			</li>
 		{% endfor %}
 	</ul>
 
 	<div class="cover__brand-info">
 		<img class="cover__logo" src="assets/img/logo__green-background.svg">
-		<h1 class="cover__title">Roveda design
-			<span class="cover__subtitle">Residential Design & Consulting</span>
+		<h1 class="cover__title">{{ page.title }}
+			<span class="cover__subtitle">{{ page.subtitle }}</span>
 		</h1>
 	</div>	
 
