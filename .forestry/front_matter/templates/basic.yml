@@ -13,5 +13,5 @@ fields:
   name: blocks
   label: Blocks
   template_types:
+  - project_list
   - carousel
-  - project-list
