@@ -1,5 +1,9 @@
 ---
 layout: projects
 title: Projects
-permalink: /projects
+permalink: "/projects"
+blocks:
+- template: project_list
+  layout: basic
+
 ---
