@@ -3,26 +3,5 @@ layout: default
 permalink: page.permalink
 ---
 <section class="{{page.layout}} container">
-<!-- 	<ul class="project__list">
-		{% for project in site.projects %}
-			<li class="project__item">
-				<a class="project__anchor" href="{{ project.url }}">{{project.title}}</a>
-			</li>
-		{% endfor %}	
-	</ul>
-	<div class="project__visual" style="background-image: url('{{ site.projects[0].banner_image }}');"></div> -->
-
-	<ul class="project__list">
-		{% for project in site.projects %}
-			<li class="project__item" ">
-				<div class="project__info">
-					<h2 class="project__title">{{project.title}}</h2>
-					<p class="project__description">{{project.description}}</p>
-					<a class="project__anchor button" href="{{project.url}}">Learn more</a>
-				</div>
-				<div class="project__visual" style="background-image: url('../{{project.banner_image}}')"></div>
-			</li>
-		{% endfor %}	
-	</ul>
-
+	{% include block-project-list.html %}
 </section>

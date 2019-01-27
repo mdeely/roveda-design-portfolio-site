@@ -1,61 +1,6 @@
 
 section.projects {
 
-	.project__list {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: left;
-		align-items: center;
-
-		.project__item {
-			display: flex;
-			flex-direction: row-reverse;
-			align-items: center;
-			margin-bottom: 100px;
-
-			.project__info {
-				display: flex;
-				flex-direction: column;
-				transition: all .2s ease-in-out;
-
-				.project__title {
-					font-size: 40px;
-					margin-bottom: .5em;
-					color: $brand;
-				}
-
-				.project__description {
-					font-size: 16px;
-				}
-
-				.project__anchor {
-					margin-top: 2em;
-					display: inline-block;
-				    flex: auto;
-				    text-align: left;
-				    margin: 40px auto auto 0;
-				    margin-top: 40px;
-				}
-			}
-
-			.project__visual {
-				$size: 300px;
-				margin: 0 80px 0 0;
-				overflow: hidden;
-				border-radius: 4px;
-				min-width: $size;
-				height: $size;
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-
-				.project__image {
-
-				}
-			}
-		}
-	}
 }
 
 // @media screen and (min-width: $s-viewport) {
