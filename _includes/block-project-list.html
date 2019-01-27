@@ -1,12 +1,14 @@
-<ul class="project__list">
-	{% for project in site.projects %}
-		<li class="project__item" ">
-			<div class="project__info">
-				<h2 class="project__title">{{project.title}}</h2>
-				<p class="project__description">{{project.description}}</p>
-				<a class="project__anchor button" href="{{project.url}}">Learn more</a>
-			</div>
-			<div class="project__visual" style="background-image: url('../{{project.banner_image}}')"></div>
-		</li>
-	{% endfor %}	
-</ul>
+<section class="projects container">
+	<ul class="project__list">
+		{% for project in site.projects %}
+			<li class="project__item" ">
+				<div class="project__info">
+					<h2 class="project__title">{{project.title}}</h2>
+					<p class="project__description">{{project.description}}</p>
+					<a class="project__anchor button" href="{{project.url}}">Learn more</a>
+				</div>
+				<div class="project__visual" style="background-image: url('../{{project.banner_image}}')"></div>
+			</li>
+		{% endfor %}	
+	</ul>
+</section>
