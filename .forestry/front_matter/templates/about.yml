@@ -12,3 +12,5 @@ fields:
 - type: file
   name: profile_image
   label: Profile image
+pages:
+- about.md
