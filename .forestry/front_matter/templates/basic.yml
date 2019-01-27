@@ -13,6 +13,6 @@ fields:
   name: blocks
   label: Blocks
   template_types:
-  - project_hero
-  - project_list
+  - project-hero
+  - project-list
   - carousel
