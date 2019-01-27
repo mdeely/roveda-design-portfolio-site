@@ -17,3 +17,5 @@ fields:
 - type: image_gallery
   name: cover_images
   label: Cover images
+pages:
+- index.md
