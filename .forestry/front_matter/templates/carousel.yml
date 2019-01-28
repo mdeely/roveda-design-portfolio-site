@@ -13,3 +13,8 @@ fields:
   - type: text
     name: caption
     label: Caption
+- type: blocks
+  name: blocks
+  label: Blocks
+  template_types:
+  - carousel
