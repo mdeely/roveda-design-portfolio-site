@@ -8,15 +8,15 @@ fields:
   label: layout
   hidden: true
   default: basic
-- type: file
-  name: image
-  label: image
 - type: text
   name: title
   label: title
 - type: text
   name: message
   label: message
+- type: file
+  name: image
+  label: image
 - type: field_group
   name: button
   label: CTA
