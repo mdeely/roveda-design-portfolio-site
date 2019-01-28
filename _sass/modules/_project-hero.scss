@@ -5,11 +5,28 @@
 	max-height: 500px;
 	min-height: 200px;
 	margin-bottom: 30px;
-	padding: 100px $default_margin;
-	@include header-extra-large();
+	padding: 0 $default_margin;
 	color: white;
  	text-align: center;
+ 	display: flex;
+ 	align-items: center;
+ 	background-size: contain;
+ 	background-repeat: no-repeat;;
+ 	background-position: center;
+	@include header-extra-large();
+	position: relative;
+	z-index: 1;
 
+	&:after {
+		content: "";
+		background-color: rgba($brand,.75);
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		z-index: -1;
+	}
 }
 
  // @media screen and (min-width: $s-viewport) {

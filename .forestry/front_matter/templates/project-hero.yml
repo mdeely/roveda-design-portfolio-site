@@ -8,6 +8,9 @@ fields:
   label: layout
   hidden: true
   default: basic
+- type: file
+  name: image
+  label: image
 - type: text
   name: title
   label: title
