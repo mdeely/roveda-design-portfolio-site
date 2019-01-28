@@ -5,7 +5,11 @@
 {% endif %}
 
 <div class="carousel__container">
-	<a href="#" class="carousel__previous"><i class="fas fa-chevron-left"></i></a>
+	{% for slide in carousel.slides %}
+		{% if forloop.length > 1 %}
+			<a href="#" class="carousel__previous"><i class="fas fa-chevron-left"></i></a>
+		{% endif %}
+	{% endfor %}
 	<ul class="carousel__list">
 		{% for slide in carousel.slides %}
 			<li class="carousel__slide {% if forloop.first%}active{% endif %}" data-slideshow-index="{{forloop.index}}">
@@ -16,5 +20,9 @@
 			</li>
 		{% endfor %}
 	</ul>
-	<a href="#" class="carousel__next"><i class="fas fa-chevron-right"></i></a>
+	{% for slide in carousel.slides %}
+		{% if forloop.length > 1 %}
+			<a href="#" class="carousel__next"><i class="fas fa-chevron-right"></i></a>
+		{% endif %}
+	{% endfor %}
 </div>

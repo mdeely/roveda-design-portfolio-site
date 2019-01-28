@@ -1,11 +1,12 @@
 {% assign hero = section %}
 {% assign hero_nested = hero.blocks %}
 
-<section class="project-hero {% if hero.blocks[0] %}project-hero__carousel{% endif %}" style="background-image: url('{{ hero.image  }}')">
+
+<section class="project-hero {% if  hero_nested[0].template == 'carousel' %}project-hero__carousel{% endif %}" style="background-image: url('{{ hero.image  }}')">
 	<div class="project-hero__title">{{ hero.title }}</div>
 	<p class="project-hero__message">{{ hero.message }}</p>
 	<a href="{{ hero.button.url }}">{{ hero.button.text }}</a>
-	{% if hero.blocks[0] %}
+	{% if hero_nested[0].template == "carousel" %}
 		{% include block-carousel.html nested=hero_nested %}
 	{% endif %}
 </section>
