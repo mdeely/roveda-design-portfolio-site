@@ -14,9 +14,6 @@ fields:
 - type: text
   name: message
   label: message
-- type: file
-  name: image
-  label: image
 - type: field_group
   name: button
   label: CTA
