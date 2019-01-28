@@ -5,7 +5,7 @@ permalink: "/projects"
 blocks:
 - template: project-hero
   layout: basic
-  title: Title
+  title: Projects
   message: Lorem ipsum a description would go in this section right here!
   image: "/uploads/Gregory_1_After-003.jpg"
   blocks: []
