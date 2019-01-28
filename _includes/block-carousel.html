@@ -1,6 +1,10 @@
-{% assign carousel = section %}
+{% if include.nested %}
+	{% assign carousel = include.nested[0] %}
+{% else %}
+	{% assign carousel = section %}
+{% endif %}
 
-<div class="carousel__container container">
+<div class="carousel__container">
 	<a href="#" class="carousel__previous"><i class="fas fa-chevron-left"></i></a>
 	<ul class="carousel__list">
 		{% for slide in carousel.slides %}
