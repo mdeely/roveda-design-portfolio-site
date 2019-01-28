@@ -10,7 +10,7 @@
  	text-align: center;
  	display: flex;
  	align-items: center;
- 	background-size: contain;
+ 	background-size: cover;
  	background-repeat: no-repeat;;
  	background-position: center;
 	@include header-extra-large();
@@ -19,7 +19,7 @@
 
 	&:after {
 		content: "";
-		background-color: rgba($brand,.75);
+		background-color: rgba($brand,.85);
 		position: absolute;
 		left: 0;
 		right: 0;
