@@ -8,3 +8,16 @@ fields:
   label: layout
   hidden: true
   default: basic
+- type: text
+  name: title
+  label: TItle
+- type: textarea
+  name: message
+  label: Message
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: file
+  name: image
+  label: Image
