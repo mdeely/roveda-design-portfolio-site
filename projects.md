@@ -8,6 +8,7 @@ blocks:
   title: Title
   message: Lorem ipsum a description would go in this section right here!
   image: "/uploads/Gregory_1_After-003.jpg"
+  blocks: []
 - template: project-list
   layout: basic
 
