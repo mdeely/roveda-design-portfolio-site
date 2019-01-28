@@ -5,7 +5,7 @@
 	<div class="project-hero__title">{{ hero.title }}</div>
 	<p class="project-hero__message">{{ hero.message }}</p>
 	<a href="{{ hero.button.url }}">{{ hero.button.text }}</a>
-	{% if hero.blocks %}
+	{% if hero.blocks[0] %}
 		{% include block-carousel.html nested=hero_nested %}
 	{% endif %}
 </section>
