@@ -21,3 +21,8 @@ fields:
 - type: file
   name: image
   label: Image
+- type: blocks
+  name: blocks
+  label: Blocks
+  template_types:
+  - carousel
