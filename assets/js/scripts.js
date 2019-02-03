@@ -4,6 +4,29 @@ $( document ).ready(function() {
 	// Gather elements //
 	/////////////////////
 
+	var $cover_list = $(".cover__list");
+
+	if ( $cover_list.length > 0) {
+		if ( $cover_list.children(".cover__list-item").length > 1 ) {
+			var $cover_items = $cover_list.children(".cover__list-item");
+			var $active_cover_item = $(".cover__list-item.active");
+
+			setInterval(function(){ 
+				var $next_cover_item = $active_cover_item.next(".cover__list-item");
+
+				if ( ($next_cover_item.length == 0) ) {
+					$next_cover_item = $cover_items.first();
+				}
+
+				$active_cover_item.removeClass("active");
+				$next_cover_item.addClass("active");
+
+				$active_cover_item = $(".cover__list-item.active");
+
+			}, 8000);
+		}
+	}
+
 	if ( $(".carousel__container").length > 0 ) {
 		var carouselPreviousClassName = "carousel__previous";
 		var carouselNextClassName = "carousel__next";

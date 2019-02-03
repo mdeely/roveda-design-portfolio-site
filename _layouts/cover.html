@@ -6,15 +6,19 @@ permalink: page.permalink
 <section class="{{page.layout}}">
 	<ul class="cover__list">
 		{% for image in page.cover_images %}
-			<li class="cover__list-item">
+			{% if forloop.first %}
+			<li class="cover__list-item active">
+			{% else %}
+			<li class="cover__list-item {{ forloop.index }}">
+			{% endif %}
 				<div class="cover__image {{ forloop.index }}" style="background-image: url('{{image}}')"></div>
 			</li>
 		{% endfor %}
 	</ul>
 
 	<div class="cover__brand-info">
-		<img class="cover__logo" src="{{ page.logo }}">
-<!-- 		<img class="cover__logo" src="{{ page.logo }} assets/img/logo__green-background.svg">-->
+<!-- 		<img class="cover__logo" src="{{ page.logo }}">
+ --><!-- 		<img class="cover__logo" src="{{ page.logo }} assets/img/logo__green-background.svg">-->
 		<h1 class="cover__title">{{ page.company_name }}
 			<span class="cover__subtitle">{{ page.subtitle }}</span>
 		</h1>

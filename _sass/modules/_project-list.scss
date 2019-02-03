@@ -16,7 +16,6 @@ section.projects {
 			align-items: center;
 			margin-bottom: 100px;
 
-
 			.project__info {
 				display: flex;
 				flex-direction: column;
@@ -24,7 +23,7 @@ section.projects {
 				margin-top: $default_margin*2;
 
 				.project__title {
-					font-size: 40px;
+					font-size: 36px;
 					margin-bottom: .5em;
 					color: $brand;
 				}
