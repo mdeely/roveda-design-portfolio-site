@@ -10,17 +10,26 @@ section.projects {
 		margin-left: $default_margin;
 		margin-right: $default_margin;
 
-		.project__item {
+		.project__anchor {
 			display: flex;
-			flex-direction: column-reverse;
-			align-items: center;
-			margin-bottom: 100px;
+			flex-direction: column;
+			border-radius: 10px;
+			padding: 10px;
+			margin-top: $default_margin*2;
+
+			&:hover {
+			    background-color: rgba(0, 0, 0, 0.05);
+			}
+
+
+			&:active {
+			    background-color: rgba(0, 0, 0, 0.1);
+			}
 
 			.project__info {
 				display: flex;
 				flex-direction: column;
 				transition: all .2s ease-in-out;
-				margin-top: $default_margin*2;
 
 				.project__title {
 					font-size: 36px;
@@ -30,16 +39,23 @@ section.projects {
 
 				.project__description {
 					font-size: 16px;
+					color: rgba(0,0,0,.8);
+					margin-bottom: 20px;
+
+					.project__learn-more {
+						color: $brand;
+						font-weight: bold;
+					}
 				}
 
-				.project__anchor {
-					margin-top: 2em;
-					display: inline-block;
-				    flex: auto;
-				    text-align: left;
-				    margin: 40px auto auto 0;
-				    margin-top: 40px;
-				}
+				// .project__anchor {
+				// 	margin-top: 2em;
+				// 	display: inline-block;
+				//     flex: auto;
+				//     text-align: left;
+				//     margin: 40px auto auto 0;
+				//     margin-top: 40px;
+				// }
 			}
 
 			.project__visual {
@@ -57,6 +73,13 @@ section.projects {
 				}
 			}
 		}
+
+		.project__item {
+			display: flex;
+			flex-direction: column-reverse;
+			align-items: center;
+			margin-bottom: 100px;
+		}
 	}
 }
 
@@ -64,15 +87,22 @@ section.projects {
 	section.projects {
 		.project__list {
 			.project__item {
-				flex-direction: row-reverse;
+				.project__anchor {
+					align-items: center;
+					flex-direction: row-reverse;
 
-				.project__info {
-					margin-top: 0;
-				}
+					.project__info {
+						margin-top: 0;
 
-				.project__visual {
-					margin: 0 80px 0 0;
-					min-width: 300px;
+						.project__description {
+							margin-bottom: 0px;
+						}
+					}	
+
+					.project__visual {
+						margin: 0 60px 0 0;
+						min-width: 300px;
+					}
 				}
 			}
 		}

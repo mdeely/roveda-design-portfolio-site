@@ -8,28 +8,6 @@ a {
 	color: $brand;
 	text-decoration: none;
 	position: relative;
-
-	&:after {
-		content: "";
-		position: absolute;
-		bottom: -10px;
-		height: 2px;
-		width: 0%;
-		background-color: $brand;
-		left: 0;
-		right: 0;
-		margin: auto;
-		transition: width .2s ease-in-out;
-	}
-
-	&:hover {
-		opacity: 1;
-
-		&:after {
-			width: 100%;
-			transition: width .2s ease-in-out;
-		}
-	}
 }
 
 img {
