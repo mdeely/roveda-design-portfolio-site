@@ -7,8 +7,9 @@ $brand: $forest_green;
 $brand--shadow: $forest_green--shadow;
 
 // Layout
-$container_max_width: 1200px;
+$container_max_width: 100%;
 $default_margin: 20px;
+$default_section_padding_top: 150px;
 
 // Effects
 $shadow__logo: 0 2px 10px rgba(black, .12);
@@ -22,9 +23,9 @@ $s-viewport: 580px;
 @mixin default_margin() {
 	padding: $default_margin;
 
-	@media screen and (min-width: $m-viewport) {
-		padding: 30px 60px 60px 60px;
-	}
+	// @media screen and (min-width: $m-viewport) {
+	// 	padding: 30px 60px 60px 60px;
+	// }
 }
 
 @mixin paragraph-text() {

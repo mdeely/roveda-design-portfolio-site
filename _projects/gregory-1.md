@@ -5,7 +5,7 @@ description: Lorem ipsum dolor sit amet, vix oporteat antiopam at, vel paulo sig
   eu. Et eam petentium salutandi, nam atqui officiis cu. No duo tantas voluptatum,
   nam no tempor deseruisse, an fabulas laoreet adipisci eam. Qui in scripta ceteros
   disputando, an hendrerit definiebas quaerendum nec.
-banner_image: "/uploads/Foster_1_After-003.jpeg"
+banner_image: "assets/img/blue.jpg"
 blocks:
 - template: carousel
   slides:
@@ -13,7 +13,7 @@ blocks:
     caption: Another caption
   - image_url: "/uploads/Foster_1_After-003.jpeg"
     caption: this is a caption
-date: 2019-01-25 05:02:09 +0000
+date: 2019-01-19 05:02:09 +0000
 project_name: Gregory 1
 
 ---

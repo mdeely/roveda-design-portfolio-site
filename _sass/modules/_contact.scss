@@ -1,7 +1,8 @@
-.contact {
+section.contact {
 	display: flex;
 	@include default_margin();
-	
+	padding-top: $default_section_padding_top;
+
 	iframe {
 		margin: 0 auto;
 	}

@@ -1,10 +1,14 @@
 nav {
 	z-index: 999;
-	position: relative;
+	position: fixed;
 	left: 0;
 	right: 0;
 	top:0;
-	color: $brown;
+	color: white;
+	background: -moz-linear-gradient(top, rgba(0,0,0,.5) 5%, rgba(0,0,0,0) .500%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,.5) 5%,rgba(0,0,0,0) 10.5%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,.5) 5%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	padding-bottom: 80px;
 
 	.container {
 		display: flex;
@@ -15,27 +19,11 @@ nav {
 
 	.logo {
 		text-align: left;
-		display: inline-block;
-		margin: 20px;
-		transition: all .2s ease-in-out;
-
-		&:hover {
-			transform: scale(1.1);
-			transition: all .2s ease-in-out;
-
-			img {
-				box-shadow: $shadow__logo-hover;
-				transition: all .2s ease-in-out;
-			}
-		}
+		margin-top: 64px;
 
 		img {
-			width: 70px;
-			min-width: 50px;
-			height: auto;
-			box-shadow: $shadow__logo;
-			border-radius: 35%;
-			transition: all .2s ease-in-out;
+			width: 42px;
+			min-width: 42px;
 		}
 	}
 
@@ -52,8 +40,11 @@ nav {
 
 			a {
 				font-weight: 500;
-				font-size: 17px;
+				font-size: 14px;
+				letter-spacing: 2.5px;
 				position: relative;
+				text-transform: uppercase;
+				color: white;
 
 				&:after {
 					content: "";
@@ -61,7 +52,7 @@ nav {
 					bottom: -10px;
 					height: 2px;
 					width: 0%;
-					background-color: $brown;
+					background-color: white;
 					left: 0;
 					right: 0;
 					margin: auto;
@@ -120,9 +111,6 @@ nav {
 				margin-right: 20px;
 				margin-left: 20px;
 
-				a {
-					font-size: 18px;
-				}
 			}
 		}
 	}

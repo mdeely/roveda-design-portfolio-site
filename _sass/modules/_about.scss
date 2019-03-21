@@ -1,6 +1,7 @@
 section.about {
 	display: flex;
 	flex-direction: column;
+	padding-top: $default_section_padding_top;
 
 	.about__profile-img {
 		margin: 0 auto;
