@@ -12,18 +12,19 @@ section.projects {
 			position: absolute;
 			margin: 4vw;
 			bottom: 0;
-			right: 0;
-			width: 100%;
+			right: 4vw;
+			width: calc(100% - 4vw - 45px);
 			max-width: 500px;
 			padding: 45px;
 			background-color: rgba(255,255,255,.9);
-			border-radius: 2px;
+			border-radius: 100% / 3%;
+			box-shadow: 0 5px 10px rgba(0,0,0,.12);
 
 			.project__title {
 				font-size: 36px;
 				margin-bottom: 20px;
 				font-weight: 200;
-				color: #AE7E5C;
+				color: $brown;
 			}
 
 			.project__description {
@@ -36,7 +37,7 @@ section.projects {
 			}
 
 			.project__anchor {
-				display: block;
+				display: inline-block;
 				margin-top: 20px;
 				font-weight: 500;
 			}
@@ -61,11 +62,11 @@ section.projects {
     		scroll-snap-align: start;
 		}
 
-		.project__item:first-child {
-			.project__visual {
-				height: calc(100vh - 40px);
-			}
-		}
+		// .project__item:first-child {
+		// 	.project__visual {
+		// 		height: calc(100vh - 40px);
+		// 	}
+		// }
 
 		.project__item:nth-child(even) {
 			.project__info {

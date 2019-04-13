@@ -24,11 +24,6 @@ fields:
   label: layout
   hidden: true
   default: project
-- type: blocks
-  name: blocks
-  label: Blocks
-  template_types:
-  - carousel
 pages:
 - _projects/gregory-1.md
 - _projects/anything-ave.md

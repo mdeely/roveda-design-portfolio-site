@@ -5,92 +5,26 @@ $( document ).ready(function() {
 	/////////////////////
 
 	var $cover_list = $(".cover__list");
+	var navHeight = $("nav").outerHeight();
+	var $nav = $("nav");
 
-	if ( $cover_list.length > 0) {
-		if ( $cover_list.children(".cover__list-item").length > 1 ) {
-			var $cover_items = $cover_list.children(".cover__list-item");
-			var $active_cover_item = $(".cover__list-item.active");
+	/////////////////////////////////////////////////////////////
+	// Hide nav when user scroll up, show when user scroll down//
+	/////////////////////////////////////////////////////////////
 
-			setInterval(function(){ 
-				var $next_cover_item = $active_cover_item.next(".cover__list-item");
-
-				if ( ($next_cover_item.length == 0) ) {
-					$next_cover_item = $cover_items.first();
-				}
-
-				$active_cover_item.removeClass("active");
-				$next_cover_item.addClass("active");
-
-				$active_cover_item = $(".cover__list-item.active");
-
-			}, 8000);
-		}
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	  var currentScrollPos = window.pageYOffset;
+	  if (prevScrollpos > currentScrollPos) {
+	   		$nav.css("top", 0);
+	  } else if ( currentScrollPos < 200 ) {
+	   		$nav.css("top", 0);
+	  }
+ 		else {
+	   		$nav.css("top", -navHeight);
+	  }
+	  prevScrollpos = currentScrollPos;
 	}
 
-	if ( $(".carousel__container").length > 0 ) {
-		var carouselPreviousClassName = "carousel__previous";
-		var carouselNextClassName = "carousel__next";
-		var $slider_controls = $(".carousel__next, .carousel__previous");
-		var slideClassName = "carousel__slide";
-		var slideCount = $("."+slideClassName).length;
-	}
-
-	////////////////////
-	// Bind to events //
-	////////////////////
-	$slider_controls.on('click', handleSlideshow );
-
-
-	///////////////
-	// Functions //
-	///////////////
-
-	function handleSlideshow(direction) {
-        direction.stopImmediatePropagation();
-		direction.preventDefault();
-
-		var activeSlide = getActiveSlide();
-		var requestedSlide = null;
-		var slideshowNumber = $(activeSlide).data("slideshow-index");
-
-		if ( $(direction.target).hasClass(carouselPreviousClassName) ) {
-			requestedSlide = slideshowNumber-1;
-
-			if ( requestedSlide == 0 ) {
-				requestedSlide = slideCount;
-			}
-		};
-
-		if ( $(direction.target).hasClass(carouselNextClassName) ) {
-			requestedSlide = slideshowNumber+1;
-
-			if ( requestedSlide > slideCount ) {
-				requestedSlide = 1;
-			};
-		};
-
-		updateSlideshow(requestedSlide, activeSlide)
-	}
-
-	function getActiveSlide() {
-		var activeSlide = $("."+slideClassName+".active");
-		return activeSlide;
-	}
-
-	function updateSlideshow(requestedSlide, activeSlide) {
-		var requestedSlide = $("."+slideClassName+"[data-slideshow-index="+requestedSlide+"]");
-
-		$(activeSlide).removeClass("active");
-		$(requestedSlide).addClass("active");
-	}
-
-	// if next is clicked
-	// 	go to .classname plus one
-	// 		if that doesn't exist, go back to first
-	//		if it does, add active class
-
-	// if previous is clicked
-	// 	go to .classroom minus 1
-	// 		if that doesn't exist, go to last. 
 
 });

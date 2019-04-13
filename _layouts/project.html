@@ -2,8 +2,35 @@
 layout: default
 ---
 <section class="project">
-	<div class="project__actions">
-		<a class="button button--small button--white" href="/projects">⃪ All projects</a>
+	<div class="project__hero">
+<!-- 		<div class="project__prev">
+			<a class="project__prev link">Previous</a>
+		</div> -->
+		<div class="project__current" style="background-image: url('/{{page.banner_image}}')"></div>
+		<div class="project__title-container">
+<!-- 			<a class="projects__link" href="/">← All projects</a>
+ -->			<h1 class="project__title">{{ page.title }}</h1>		
+		</div>
+<!-- 		<div class="project__next">
+			<a class="project__next link">Next</a>
+		</div>	 -->	
 	</div>
-	<h1 class="project__title">{{ page.title }}</h1>	
+	<div class="project__gallery">
+		<ul class="image__list">
+			{% for image in page.slides %}
+			<li class="image__item">
+				<div class="image__visual" style="background-image: url('{{image.image_url}}')">
+			</li>
+			<li class="image__item two-up">
+				<div class="image__visual before" style="background-image: url('{{image.image_url}}')">
+					<div class="image__caption">Before</div>
+				</div>
+				<div class="image__visual after" style="background-image: url('{{image.image_url}}')">
+					<div class="image__caption">After</div>
+				</div>
+			</li>
+			{% endfor %}
+
+		</ul>
+	</div>
 </section>

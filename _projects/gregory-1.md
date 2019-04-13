@@ -6,9 +6,7 @@ description: Lorem ipsum dolor sit amet, vix oporteat antiopam at, vel paulo sig
   nam no tempor deseruisse, an fabulas laoreet adipisci eam. Qui in scripta ceteros
   disputando, an hendrerit definiebas quaerendum nec.
 banner_image: "assets/img/blue.jpg"
-blocks:
-- template: carousel
-  slides:
+slides:
   - image_url: "/uploads/Foster_1_After-001.jpg"
     caption: Another caption
   - image_url: "/uploads/Foster_1_After-003.jpeg"

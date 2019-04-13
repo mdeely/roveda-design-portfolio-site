@@ -1,4 +1,6 @@
 {% assign primary = site.data.navigation.primary %}
+{% assign social = site.data.social_links %}
+
 
 <nav>
 	<div class="container">
@@ -6,6 +8,16 @@
 		<img src="/assets/img/logo_white_text.svg">
 	</a>
 	<ul>
+		{% for item in social %}
+			{% if item.url %}
+				<li class="social">
+					<a href="{{ item.url }}" data-tooltip="{{item.label}}">
+						<img src="{{item.asset_src}}">
+					</a>
+				</li>
+			{% endif %}
+		{% endfor %}
+
 		{% for item in primary %}
 			{% if item.url == "/" %}
 			{% else %}
