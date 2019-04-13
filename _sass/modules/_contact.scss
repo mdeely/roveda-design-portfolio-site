@@ -1,6 +1,5 @@
 section.contact {
 	display: flex;
-	@include default_margin();
 	padding-top: $default_section_padding_top;
 
 	iframe {

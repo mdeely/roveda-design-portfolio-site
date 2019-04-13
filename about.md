@@ -2,7 +2,6 @@
 layout: about
 title: About
 permalink: "/about"
-proile_image: "/uploads/img-modified.jpg"
 profile_image: "/uploads/logo__green-background.svg"
 
 ---
