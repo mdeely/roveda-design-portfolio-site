@@ -2,7 +2,6 @@ section.projects {
 	overflow-x: hidden;
 
 	.project__list {
-	    scroll-snap-type: mandatory;
 	    scroll-snap-points-y: repeat(100vh);
 	    scroll-snap-type: y mandatory;
 	    overflow-y: scroll;

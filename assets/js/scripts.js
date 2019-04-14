@@ -7,28 +7,30 @@ $( document ).ready(function() {
 	var $cover_list = $(".cover__list");
 	var navHeight = $("nav").outerHeight();
 	var $nav = $("nav");
-	var $overlay = $(".overlay__container");
-	var $overlay_open = $("[href='#overlay_open']");
-	var $overlay_close = $("[href='#overlay_close']");
+
+	$("#contact_form").submit(function(e) {
+
+	    e.preventDefault(); // avoid to execute the actual submit of the form.
+
+	    var form = $(this);
+	    var url = form.attr('action');
+
+	    $.ajax({
+	           type: "GET",
+	           url: url,
+	           contentType: "application/x-www-form-urlencoded",
+	           data: form.serialize(), // serializes the form's elements.
+	           0: function(data)
+	           {
+	               alert(data); // show response from the php script.
+	           }
+	         });
+	});
 
 
 	/////////////////////////////////////////////////////////////
 	// Hide nav when user scroll up, show when user scroll down//
 	/////////////////////////////////////////////////////////////
-
-	$overlay_open.on('click', openOverlay);
-	$overlay_close.on('click', closeOverlay);
-
-
-	function openOverlay(e){
-		e.preventDefault();
-		$overlay.fadeIn(300);
-	};
-
-	function closeOverlay(e){
-		e.preventDefault();
-		$overlay.fadeOut(300);
-	};
 
 	var prevScrollpos = window.pageYOffset;
 	window.onscroll = function() {
