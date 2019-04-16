@@ -1,3 +1,3 @@
 primary:
   - label: About
-    url: "#overlay_open"
+    url: "#about_section"

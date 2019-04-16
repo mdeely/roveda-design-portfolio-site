@@ -4,7 +4,6 @@ $( document ).ready(function() {
 	// Gather elements //
 	/////////////////////
 
-	var $cover_list = $(".cover__list");
 	var navHeight = $("nav").outerHeight();
 	var $nav = $("nav");
 
@@ -15,17 +14,23 @@ $( document ).ready(function() {
 	    var form = $(this);
 	    var url = form.attr('action');
 
-	    $.ajax({
-	           type: "GET",
-	           url: url,
-	           contentType: "application/x-www-form-urlencoded",
-	           data: form.serialize(), // serializes the form's elements.
-	           0: function(data)
-	           {
-	               alert(data); // show response from the php script.
-	           }
-	         });
+		$.ajax({
+		    url: url,
+	        data: form.serialize(),
+		    type: "POST",
+		    dataType: "xml",
+		    statusCode: {
+		        0: function() {
+		            //Success message
+		        },
+		        200: function() {
+		            //Success Message
+		        }
+		    }
+		});
 	});
+
+
 
 
 	/////////////////////////////////////////////////////////////
