@@ -19,6 +19,23 @@ fields:
   name: banner_image
   label: Banner image
   description: This will display on the cover page and Projects page
+- type: field_group_list
+  label: Images
+  name: images
+  fields:
+  - type: file
+    name: before
+    label: Image
+  - type: text
+    name: caption
+    label: Caption
+  - type: file
+    name: after
+    label: Image
+  - type: text
+    name: caption
+    label: Caption
+
 - type: text
   name: layout
   label: layout
@@ -27,3 +44,5 @@ fields:
 pages:
 - _projects/gregory-1.md
 - _projects/anything-ave.md
+- _projects/gregory-2.md
+- _projects/montecello.md

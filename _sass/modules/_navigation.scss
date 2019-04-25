@@ -31,6 +31,8 @@ nav {
 		flex-direction: row;
 		justify-content: left;
 		align-items: center;
+		padding-left: 40px;
+		padding-right: 40px;	
 
 		> * {
 			pointer-events: initial;
@@ -39,7 +41,7 @@ nav {
 
 	.logo {
 		text-align: left;
-		margin-top: 64px;
+		margin-top: 32px;
 
 		img {
 			width: 42px;
@@ -55,12 +57,13 @@ nav {
 
 	ul {
 		display: flex;
+		display: none;
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
 		margin-left: auto;
 		margin-right: 0;
-		margin-top: 64px;
+		margin-top: 32px;
 
 		li {
 			margin-right: 15px;
@@ -92,6 +95,10 @@ nav {
 
 			&:not(.social) {
 				margin-left: 40px;
+
+				&:last-child {
+					margin-right: 0;
+				}
 			}
 
 			&.social {
@@ -135,6 +142,45 @@ nav {
 		}
 	}
 
+	// .nav__menu {
+	//     background-color: #445B49;
+	//     position: fixed;
+	//     top: 0;
+	//     left: 0;
+	//     right: 0;
+	//     bottom: 0;
+	//     margin-top: 0;
+	//     flex-direction: column;
+	//     justify-content: center;
+	//     align-items: center;
+
+	//     > li,
+	//     .social {
+	//     	margin-left: 0;
+	//     	margin-right: 0;
+	//     	margin-top: 6vh;
+	//     	margin-bottom: 6vh;
+
+	//     	&:not(.social) {
+	//     		margin-left: 0;
+	//     	}
+
+	// 		[data-tooltip] {
+	// 			&:before {
+	// 				top: initial;
+	// 				bottom: -30px;
+	// 				opacity: 1;
+	// 				background-color: transparent;
+	// 			}
+
+	// 			&:hover:before {
+	// 				top: initial;
+	// 				bottom: -30px;
+	// 			}
+	// 		}
+	//     }
+	// }
+
 	&.cover {
 		position: fixed;
 		padding-top: 70px;
@@ -155,12 +201,49 @@ nav {
 			margin: initial;
 		}
 	}
+
+	.mobile__trigger {
+		margin-left: auto;
+		margin-top: 32px;
+		text-shadow: $nav_shadow;
+		font-size: 26px;
+
+		a {
+			color: white;
+
+			&:after {
+				background-color: white;
+				box-shadow: $nav_shadow;
+			}
+		}
+	}
 }
 
- @media screen and (min-width: $s-viewport) {
+ @media screen and (min-width: $m-viewport) {
 	nav {
 
 		ul {
+			margin-top: 64px;
+		}
+
+		.container {
+			padding-left: 80px;
+			padding-right: 80px;
+
+			.logo {
+				margin-top: 64px;
+			}
+		}
+	}
+ }
+
+
+ @media screen and (min-width: $xs-viewport) {
+
+	nav {
+
+		ul {
+			display: flex;
 
 			li {
 				margin-right: 20px;
@@ -168,6 +251,10 @@ nav {
 
 			}
 		}
+	}
+
+	.mobile__trigger {
+		display: none;
 	}
  }
 

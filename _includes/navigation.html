@@ -1,13 +1,12 @@
 {% assign primary = site.data.navigation.primary %}
 {% assign social = site.data.social_links %}
 
-
 <nav>
 	<div class="container">
 	<a class="logo" href="/">
 		<img src="/assets/img/logo_white_text.svg">
 	</a>
-	<ul>
+	<ul class="nav__menu">
 		{% for item in social %}
 			{% if item.url %}
 				<li class="social">
@@ -32,5 +31,6 @@
 			{% endif %}
 		{% endfor %}
 	</ul>
+	<div class="mobile__trigger"><a href="#"><i class="fas fa-bars"></i></a></div>
 	</div>
 </nav>

@@ -1,74 +1,99 @@
-section.projects {
-	overflow-x: hidden;
+body.projects {
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+    // overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
 
-	.project__list {
-	    scroll-snap-points-y: repeat(100vh);
-	    scroll-snap-type: y mandatory;
-	    overflow-y: scroll;
-	    height: 100vh;
+.project__list {
+    // scroll-snap-points-y: repeat(100vh);
+    // scroll-snap-type: y mandatory;
+    // overflow-y: scroll;
+    // height: 100vh;
+}
+
+.project__item {
+	position: relative;
+	scroll-snap-align: start;
+	height: 100vh;
+	// overflow: scroll;
+}
+
+.project__info {
+	position: absolute;
+	bottom: 0;
+	max-width: 500px;
+	padding: 24px;
+	background-color: rgba($forest_green, .95);
+	border-radius: 100% / 3%;
+	box-shadow: 0 5px 10px rgba(0,0,0,.2);
+	color: white;
+	margin: 4vw auto;
+	right: 0;
+	left: 0;
+	width: 90vw;
+
+	.project__title {
+		font-size: 36px;
+		margin-bottom: 20px;
+		font-weight: 200;
+		color: inherit;
+	}
+
+	.project__description {
+		font-size: 14px;
+		color: inherit;
+		opacity: .65;
+		line-height: 1.7;
+
+		.project__learn-more {
+
+		}
+	}
+
+	.project__anchor {
+		display: inline-block;
+		margin-top: 20px;
+		font-weight: 500;
+		color: white;
+		padding: 16px;
+		border-radius: 2px;
+		background-color: $brown;
+	}
+
+}
+
+.project__visual {
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+
+	.project__image {
+
+	}
+}
+
+@media only screen and (min-width: $s-viewport) {
+	.project__item {
 
 		.project__info {
-			position: absolute;
 			margin: 4vw;
-			bottom: 0;
 			right: 4vw;
+			left: initial;
 			width: calc(100% - 4vw - 45px);
-			max-width: 500px;
 			padding: 45px;
-			background-color: rgba(255,255,255,.9);
-			border-radius: 100% / 3%;
-			box-shadow: 0 5px 10px rgba(0,0,0,.12);
-
-			.project__title {
-				font-size: 36px;
-				margin-bottom: 20px;
-				font-weight: 200;
-				color: $brown;
-			}
 
 			.project__description {
 				font-size: 15px;
-
-
-				.project__learn-more {
-
-				}
-			}
-
-			.project__anchor {
-				display: inline-block;
-				margin-top: 20px;
-				font-weight: 500;
-			}
-
-		}
-
-		.project__visual {
-			width: 100%;
-			height: 100vh;
-			background-size: cover;
-			background-size: 100%;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-
-			.project__image {
-
+				line-height: 2;
 			}
 		}
 
-		.project__item {
-			position: relative;
-    		scroll-snap-align: start;
-		}
-
-		// .project__item:first-child {
-		// 	.project__visual {
-		// 		height: calc(100vh - 40px);
-		// 	}
-		// }
-
-		.project__item:nth-child(even) {
-			.project__info {
+		&:nth-child(even) {
+			.project__info  {
 				bottom: initial;
 				right: initial;
 				left: 4vw;

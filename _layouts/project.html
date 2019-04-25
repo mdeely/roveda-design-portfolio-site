@@ -6,7 +6,7 @@ layout: default
 <!-- 		<div class="project__prev">
 			<a class="project__prev link">Previous</a>
 		</div> -->
-		<div class="project__current" style="background-image: url('/{{page.banner_image}}')"></div>
+		<div class="project__current" style="background-image: url('{{page.banner_image}}')"></div>
 		<div class="project__title-container">
 <!-- 			<a class="projects__link" href="/">← All projects</a>
  -->			<h1 class="project__title">{{ page.title }}</h1>		
@@ -16,22 +16,35 @@ layout: default
 		</div>	 -->	
 	</div>
 	<div class="project__gallery">
-		<ul class="image__list">
-			{% for image in page.slides %}
-			<li class="image__item">
-				<div class="image__visual" style="background-image: url('{{image.image_url}}')">
-			</li>
-			<li class="image__item two-up">
-				<div class="image__visual before" style="background-image: url('{{image.image_url}}')">
-					<div class="image__caption">Before</div>
-				</div>
-				<div class="image__visual after" style="background-image: url('{{image.image_url}}')">
-					<div class="image__caption">After</div>
-				</div>
-			</li>
+			{% for image in page.images %}
+				{% if image.before and image.after %}
+					<div class="image__item two-up">
+						<figure class="image__visual before">
+							<img src="{{ image.before }}">
+							<figcaption class="image__caption">{{ image.caption }}</figcaption>
+						</figure>
+						<figure class="image__visual after">
+							<img src="{{ image.after }}">
+							<figcaption class="image__caption">{{ image.after_caption }}</figcaption>
+						</figure>
+<!-- 						<div class="image__visual before" style="background-image: url('{{image.before}}')">
+							<div class="image__caption">Before</div>
+						</div>
+						<div class="image__visual after" style="background-image: url('{{image.after}}')">
+							<div class="image__caption">After</div>
+						</div> -->
+					</div>
+				{% else %}
+					<div class="image__item">
+						<figure class="image__visual before">
+							<img src="{{ image.before }}">
+							<figcaption class="image__caption">{{ image.caption }}</figcaption>
+						</figure>
+<!-- 						<div class="image__visual" style="background-image: url('{{image.before}}')">
+ -->					</div>
+				{% endif %}
 			{% endfor %}
 
-		</ul>
 	</div>
 </section>
 

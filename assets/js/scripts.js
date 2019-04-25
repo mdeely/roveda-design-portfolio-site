@@ -7,30 +7,28 @@ $( document ).ready(function() {
 	var navHeight = $("nav").outerHeight();
 	var $nav = $("nav");
 
-	$("#contact_form").submit(function(e) {
+	// $("#contact_form").submit(function(e) {
 
-	    e.preventDefault(); // avoid to execute the actual submit of the form.
+	//     e.preventDefault(); // avoid to execute the actual submit of the form.
 
-	    var form = $(this);
-	    var url = form.attr('action');
+	//     var form = $(this);
+	//     var url = form.attr('action');
 
-		$.ajax({
-		    url: url,
-	        data: form.serialize(),
-		    type: "POST",
-		    dataType: "xml",
-		    statusCode: {
-		        0: function() {
-		            //Success message
-		        },
-		        200: function() {
-		            //Success Message
-		        }
-		    }
-		});
-	});
-
-
+	// 	$.ajax({
+	// 	    url: url,
+	//         data: form.serialize(),
+	// 	    type: "POST",
+	// 	    dataType: "xml",
+	// 	    statusCode: {
+	// 	        0: function() {
+	// 	            //Success message
+	// 	        },
+	// 	        200: function() {
+	// 	            //Success Message
+	// 	        }
+	// 	    }
+	// 	});
+	// });
 
 
 	/////////////////////////////////////////////////////////////

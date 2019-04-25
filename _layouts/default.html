@@ -1,4 +1,5 @@
 {% include head.html %}
+<body class="{{ page.layout }}">
 {% include navigation.html %}
 
 	{{ content }}
@@ -6,5 +7,6 @@
 	{% for section in page.blocks %}
 	  {% include block-{{ section.template }}.html %}
 	{% endfor %}
-	
+
+</body>
 {% include footer.html %}
