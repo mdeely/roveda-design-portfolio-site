@@ -1,7 +1,6 @@
 ---
 label: Project
 hide_body: true
-is_partial: false
 fields:
 - type: text
   name: title
@@ -35,7 +34,6 @@ fields:
   - type: text
     name: caption
     label: Caption
-
 - type: text
   name: layout
   label: layout
@@ -44,5 +42,4 @@ fields:
 pages:
 - _projects/gregory-1.md
 - _projects/anything-ave.md
-- _projects/gregory-2.md
 - _projects/montecello.md
