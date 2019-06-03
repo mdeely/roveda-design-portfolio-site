@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Gregory 1
-description: Lorem ipsum dolor sit amet, vix oporteat antiopam at, vel paulo signiferumque
+description: Lorem dolor sit amet, vix oporteat antiopam at, vel paulo signiferumque
   eu. Et eam petentium salutandi, nam atqui officiis cu. No duo tantas voluptatum,
   nam no tempor deseruisse, an fabulas laoreet adipisci eam. Qui in scripta ceteros
   disputando, an hendrerit definiebas quaerendum nec.
@@ -13,9 +13,8 @@ images:
   after_caption: After
 - before: "/uploads/Foster_1_After-003.jpeg"
   caption: this is a caption
-date: 2019-01-19 05:02:09 +0000
+  after: ''
+date: '2019-01-19T05:02:09.000+00:00'
 project_name: Gregory 1
-published: true
-
 
 ---
