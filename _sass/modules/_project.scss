@@ -110,6 +110,7 @@
 		.image__caption {
 			color: $gold;
 			font-weight: 600;
+			margin-top: 24px;
 		}
 
 		&.two-up {
@@ -147,6 +148,7 @@
 			.image__caption {
 				position: absolute;
 				top: -$caption_offset;
+				margin-top: 0;
 			}
 		}
 	}
@@ -157,6 +159,7 @@
 
 		.project__title-container {
 			max-width: 520px;
+			min-width: initial;
 		}
 	}
 }
