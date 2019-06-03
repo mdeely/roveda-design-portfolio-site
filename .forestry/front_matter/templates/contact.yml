@@ -1,7 +1,6 @@
 ---
 label: Contact
 hide_body: false
-is_partial: false
 fields:
 - type: text
   name: title
@@ -18,5 +17,3 @@ fields:
     schema:
       format: html
   default: ''
-pages:
-- contact.md

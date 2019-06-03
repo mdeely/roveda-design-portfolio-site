@@ -1,7 +1,6 @@
 ---
 label: About
 hide_body: false
-is_partial: false
 fields:
 - type: text
   name: title
@@ -12,5 +11,3 @@ fields:
 - type: file
   name: profile_image
   label: Profile image
-pages:
-- about.md
