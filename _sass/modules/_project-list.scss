@@ -29,8 +29,8 @@ body.projects {
 	box-shadow: 0 5px 10px rgba(0,0,0,.2);
 	color: white;
 	margin: 4vw auto;
-	right: 0;
 	left: 0;
+	right: 0;
 	width: 90vw;
 
 	.project__title {
@@ -43,7 +43,7 @@ body.projects {
 	.project__description {
 		font-size: 14px;
 		color: inherit;
-		opacity: .65;
+		opacity: .85;
 		line-height: 1.7;
 
 		.project__learn-more {
@@ -81,23 +81,22 @@ body.projects {
 
 		.project__info {
 			margin: 4vw;
-			right: 4vw;
-			left: initial;
 			width: calc(100% - 4vw - 45px);
 			padding: 45px;
+			bottom: 0;
+			right: 0;
+			left: initial;
 
 			.project__description {
-				font-size: 15px;
+				font-size: 13px;
 				line-height: 2;
 			}
 		}
 
 		&:nth-child(even) {
 			.project__info  {
-				bottom: initial;
+				left: 0;
 				right: initial;
-				left: 4vw;
-				top: calc(4vw + 120px);
 			}
 		}
 	}
