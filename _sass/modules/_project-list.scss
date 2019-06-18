@@ -1,75 +1,50 @@
-body.projects {
-    scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
-    // overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
-}
-
 .project__list {
-    // scroll-snap-points-y: repeat(100vh);
-    // scroll-snap-type: y mandatory;
-    // overflow-y: scroll;
-    // height: 100vh;
+	margin-top: calc(16vh + 50px);
+	display: flex;
+	flex-direction: row;
+	text-overflow: scroll;
 }
 
 .project__item {
-	position: relative;
-	scroll-snap-align: start;
-	height: 100vh;
-	// overflow: scroll;
+	width: 400px;
+	height: 500px;
+	margin: 0 auto;
+	border-radius: 20px;
+	box-shadow: 0 -3px 60px rgba(0,0,0, .18);
+	background-color: white;
+	min-width: 70%;
+    background-position: center;
+    background-size: cover;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	margin-right: -20px;
 }
 
 .project__info {
-	position: absolute;
-	bottom: 0;
-	max-width: 500px;
-	padding: 24px;
-	background-color: rgba($forest_green, .95);
-	border-radius: 100% / 3%;
-	box-shadow: 0 5px 10px rgba(0,0,0,.2);
-	color: white;
-	margin: 4vw auto;
-	left: 0;
-	right: 0;
-	width: 90vw;
 
 	.project__title {
-		font-size: 36px;
-		margin-bottom: 20px;
-		font-weight: 200;
-		color: inherit;
+
 	}
 
 	.project__description {
-		font-size: 14px;
-		color: inherit;
-		opacity: .85;
-		line-height: 1.7;
+		display: none;
 
 		.project__learn-more {
 
 		}
 	}
 
-	.project__anchor {
-		display: inline-block;
-		margin-top: 20px;
-		font-weight: 500;
-		color: white;
-		padding: 16px;
-		border-radius: 2px;
-		background-color: $brown;
-	}
 
 }
 
-.project__visual {
+.project__anchor {
+	margin-top: auto;
 	width: 100%;
-	height: 100vh;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
+}
+
+.project__visual {
+
 
 	.project__image {
 
@@ -77,27 +52,5 @@ body.projects {
 }
 
 @media only screen and (min-width: $s-viewport) {
-	.project__item {
 
-		.project__info {
-			margin: 4vw;
-			width: calc(100% - 4vw - 45px);
-			padding: 45px;
-			bottom: 0;
-			right: 0;
-			left: initial;
-
-			.project__description {
-				font-size: 13px;
-				line-height: 2;
-			}
-		}
-
-		&:nth-child(even) {
-			.project__info  {
-				left: 0;
-				right: initial;
-			}
-		}
-	}
 }
