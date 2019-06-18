@@ -1,10 +1,4 @@
 ---
 - label: Houzz
   asset_src: "/assets/img/houzz_white.svg"
-  url: "google.com"
-- label: Instagram
-  asset_src: "/assets/img/instagram_white.svg"
-  url: "google.com"
-- label: Facebook
-  asset_src: "/assets/img/facebook_white.svg"
-  url: "google.com"
+  url: google.com
