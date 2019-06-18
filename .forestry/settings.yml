@@ -19,7 +19,7 @@ sections:
   - contact
   - project
 - type: document
-  path: _data
+  path: _data/**/*
   label: Navigation
 upload_dir: uploads
 public_path: "/uploads"
