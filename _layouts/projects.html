@@ -5,14 +5,13 @@ permalink: page.permalink
 <!-- <section class="projects"> -->
 	<ul class="project__list">
 		{% for project in site.projects %}
-			<div class="project__item" style="background-image: url('../{{project.banner_image}}')">
+			<a class="project__item" href="{{project.url}}" style="background-image: url('../{{project.banner_image}}')">
 					<div class="project__info">
 						<h2 class="project__title">{{project.title}}</h2>
 						<p class="project__description">{{project.description}}</p>
 					</div>
-				</a>
-				<a class="button project__anchor" href="{{project.url}}">Explore project</a>
-			</div>
+				<div class="button project__anchor">Explore project</div>
+			</a>
 		{% endfor %}
 	</ul>
 	{% include overlay.html %}
