@@ -2,7 +2,9 @@
 	margin-top: calc(16vh + 50px);
 	display: flex;
 	flex-direction: row;
-	text-overflow: scroll;
+	overflow: scroll;
+	padding: 0 20px;
+	max-width: 100vw;
 }
 
 .project__item {
@@ -18,13 +20,17 @@
 	padding: 50px;
 	display: flex;
 	flex-direction: column;
-	margin-right: -20px;
+	margin-right: 20px;
+	margin-left: 20px;
+	align-items: center;
 }
 
 .project__info {
-
+	
 	.project__title {
-
+	    color: white;
+	    text-shadow: 0 2px 14px black;
+	    font-size: 21px;
 	}
 
 	.project__description {
@@ -39,8 +45,9 @@
 }
 
 .project__anchor {
-	margin-top: auto;
 	width: 100%;
+	max-width: 400px;
+	margin: auto 0 0 0;
 }
 
 .project__visual {
