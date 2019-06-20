@@ -6,6 +6,7 @@ description: Lorem dolor sit amet, vix oporteat antiopam at, vel paulo signiferu
   nam no tempor deseruisse, an fabulas laoreet adipisci eam. Qui in scripta ceteros
   disputando, an hendrerit definiebas quaerendum nec.
 banner_image: "/uploads/blue.jpg"
+location: Evanston, Chicago
 images:
 - before: "/uploads/Foster_1_After-001.jpg"
   caption: Before

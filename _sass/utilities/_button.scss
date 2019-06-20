@@ -18,6 +18,10 @@ button,
 			content: none;
 		}
 	}
+
+	&.brown {
+		background-color: $gold;
+	}
 }
 
 .button--small {

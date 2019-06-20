@@ -3,6 +3,7 @@ layout: project
 title: Anything Ave.
 description: A project where things happened.
 banner_image: "/uploads//Gregory_1_After-003.jpg"
+location: Evanston, Chicago
 images:
 - before: "/uploads/Gregory_1_After-001.jpg"
   caption: b4
