@@ -35,23 +35,6 @@ $( document ).ready(function() {
 	// Hide nav when user scroll up, show when user scroll down//
 	/////////////////////////////////////////////////////////////
 
-	var $project_items = $(".project__item__wrapper:not(a.project__item, .project__anchor)");
-
-	$project_items.on('mouseover', setActiveProject);
-
-	function setActiveProject(event) {
-		var project = $(event.target);
-
-		if ( $(project).hasClass("project__item__wrapper") ) {
-			var projectClasses = $(project).attr('class').replace("project__item__wrapper ", "");
-			var projectNumber = projectClasses;
-
-			$(".project__item__wrapper").removeClass("active");
-			$(".project__info").removeClass("active");
-			$("." + projectNumber).addClass(" active");
-		}
-	};
-
 	var prevScrollpos = window.pageYOffset;
 	window.onscroll = function() {
 	  var currentScrollPos = window.pageYOffset;
