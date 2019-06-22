@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Anything Ave.
+title: Foster
 description: A project where things happened.
 banner_image: "/uploads//Gregory_1_After-003.jpg"
 location: Evanston, Chicago

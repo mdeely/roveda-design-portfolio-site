@@ -48,7 +48,6 @@ $( document ).ready(function() {
 	  document.documentElement.style.setProperty('--vh', `${vh}px`);
 	});
 
-
 	/////////////////////////////////////////////////////////////
 	// Hide nav when user scroll up, show when user scroll down//
 	/////////////////////////////////////////////////////////////
