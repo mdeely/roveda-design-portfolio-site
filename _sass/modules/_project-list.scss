@@ -6,6 +6,7 @@
 	padding: 18vh 20px 0 20px;
 	max-width: 100vw;
 	height: 100vh;
+  	height: calc(var(--vh, 1vh) * 100);
 }
 
 .project__item__wrapper {
@@ -13,6 +14,7 @@
 	min-width: 350px;
 	width: 50%;
 	max-height: 75vh;
+	max-height: calc(var(--vh, 1vh) * 75)
 	// opacity: .65;
 
 	// &.active {
@@ -110,6 +112,7 @@
 	.project__item__wrapper {
 		min-width: 35%;
 		max-height: 72vh;
+		max-height: calc(var(--vh, 1vh) * 72)
 	}
 
 	.project__info {
