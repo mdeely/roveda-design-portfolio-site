@@ -5,7 +5,7 @@ permalink: page.permalink
 <!-- <section class="projects"> -->
 	<ul class="project__list">
 		{% for project in site.projects %}
-			<div class="project__item__wrapper" {% if forloop.index == 3 %}id="middle"{%endif%}>
+			<li class="project__item__wrapper" {% if forloop.index == 3 %}id="middle"{%endif%}>
 				<a class="project__item" href="{{project.url}}" style="background-image: url('../{{project.banner_image}}')">
 <!-- 					<div class="button project__anchor">Explore</div>
  -->				<div class="project__info" >
@@ -14,9 +14,7 @@ permalink: page.permalink
 						<p class="project__location">{{project.location}}</p>
 					</div>
 				</a>
-			</div>
-		{% endfor %}
-		{% for project in site.projects %}
+			</li>
 		{% endfor %}
 	</ul>
 <!-- </section>

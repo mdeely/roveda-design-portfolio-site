@@ -7,6 +7,26 @@ $( document ).ready(function() {
 	var navHeight = $("nav").outerHeight();
 	var $nav = $("nav");
 
+	// var projectListWidth = $(".project__list").width();
+	// var projectItemWidth = $(".project__item").width();
+	// var scrollToBy = (projectListWidth / 2);
+
+	// console.log(scrollToBy);
+
+	// // var projectListWidth = $('.project__list').width()/2;
+	// // var projectListItem = $('.project__item:first').width()/2;	
+
+ //    $('.project__list').scrollLeft(scrollToBy);
+
+ //    console.log(projectListWidth);
+ //    console.log(projectListItem);
+
+
+    // var $outerContent = $('.project__list');
+    // var $innerContent = $('.project__item__wrapper');
+
+    // $outerContent.scrollLeft(($innerContent.width() - $outerContent.width()) / 2);  
+
 	// $("#contact_form").submit(function(e) {
 
 	//     e.preventDefault(); // avoid to execute the actual submit of the form.
@@ -29,7 +49,6 @@ $( document ).ready(function() {
 	// 	    }
 	// 	});
 	// });
-
 
 
 	// /////////////////////
