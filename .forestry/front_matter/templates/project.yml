@@ -44,5 +44,3 @@ fields:
   label: layout
   hidden: true
   default: project
-pages:
-- _projects/montecello.md
