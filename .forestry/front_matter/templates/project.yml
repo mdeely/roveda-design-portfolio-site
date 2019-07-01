@@ -8,6 +8,11 @@ fields:
   config:
     required: true
   description: Short title for your project.
+- name: location
+  type: text
+  config:
+    required: false
+  label: Location
 - type: textarea
   name: description
   label: Description
@@ -39,10 +44,5 @@ fields:
   label: layout
   hidden: true
   default: project
-- name: location
-  type: text
-  config:
-    required: false
-  label: Location
 pages:
 - _projects/montecello.md
