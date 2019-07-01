@@ -44,3 +44,5 @@ fields:
   label: layout
   hidden: true
   default: project
+pages:
+- _projects/mcburger-time-friendship-place.md
