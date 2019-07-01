@@ -32,7 +32,7 @@ fields:
     name: after
     label: Image
   - type: text
-    name: caption
+    name: caption2
     label: Caption
 - type: text
   name: layout
