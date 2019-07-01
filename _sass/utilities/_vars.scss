@@ -13,6 +13,9 @@ $container_max_width: 100%;
 $default_margin: 20px;
 $default_section_padding_top: 150px;
 
+$navHeight: 20vh;
+$projectListHeight: 100vh - $navHeight;
+
 // Effects
 $shadow__logo: 0 2px 10px rgba(black, .12);
 $shadow__logo-hover: 0 6px 20px rgba(black, .08);

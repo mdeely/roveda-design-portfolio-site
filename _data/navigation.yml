@@ -1,3 +1,3 @@
 primary:
-  - label: About
-    url: "#about_section"
+  - label: Projects
+    url: "/"

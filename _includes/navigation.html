@@ -1,36 +1,40 @@
 {% assign primary = site.data.navigation.primary %}
 {% assign social = site.data.social_links %}
 
-<nav>
+<nav class="mainNav">
 	<div class="container">
-		<div class="menu__trigger"><a href="#"><i class="fas fa-bars"></i></a></div>
-		<a class="logo" href="/" data-tooltip="Projects">
+		<div class="menu__trigger"><a class="navButton" href="#"><i class="fas fa-bars"></i></a></div>
+		<a class="logo" href="/">
 			<img src="/assets/img/logo_green_text.svg">
 		</a>
 		<ul class="nav__menu">
 			{% for item in social %}
 				{% if item.url %}
 					<li class="social">
-						<a href="{{ item.url }}" data-tooltip="{{item.label}}">
+						<a class="navButton" href="{{ item.url }}">
 							<img src="{{item.asset_src}}">
 						</a>
 					</li>
 				{% endif %}
 			{% endfor %}
 
-<!-- 			{% for item in primary %}
-				{% if item.url == "/" %}
-				{% else %}
-					<li>
-						{% assign page_url = page.url | replace: "/","" | prepend: "/" %}
-						{% if item.url == page_url %}
-							<a class="active" href="{{ item.url }}">{{ item.label }}</a>
-						{% else %}
+			<div class="menuOptions">
+				<ul class="optionsList">
+					{% for item in primary %}
+						<li>
 							<a href="{{ item.url }}">{{ item.label }}</a>
+						</li>
+					{% endfor %}
+
+					{% for item in social %}
+						{% if item.url %}
+							<li>
+								<a href="{{ item.url }}">{{item.label}}</a>
+							</li>
 						{% endif %}
-					</li>
-				{% endif %}
-			{% endfor %} -->
+					{% endfor %}
+				</ul>
+			</div>
 		</ul>
 	</div>
 </nav>

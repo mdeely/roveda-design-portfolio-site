@@ -5,7 +5,17 @@ $( document ).ready(function() {
 	/////////////////////
 
 	var navHeight = $("nav").outerHeight();
-	var $nav = $("nav");
+	var $nav = $(".mainNav");
+
+	var $menuTrigger = $(".menu__trigger");
+
+	$menuTrigger.on('click', showMenuTrigger);
+
+	function showMenuTrigger() {
+		$nav.toggleClass("open");
+		console.log($(".menu__trigger fa-bars"));
+		$(".menu__trigger i").toggleClass("fa-bars").toggleClass("fa-times");
+	}
 
 	// var projectListWidth = $(".project__list").width();
 	// var projectItemWidth = $(".project__item").width();
