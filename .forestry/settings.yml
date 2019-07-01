@@ -22,7 +22,7 @@ sections:
   path: _data/social_links.yml
   label: Social Links
 - type: document
-  path: _data
+  path: _data/navigation.yml
   label: Navigation menu
   match: "**/*"
 upload_dir: uploads
