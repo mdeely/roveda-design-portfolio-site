@@ -23,21 +23,14 @@ fields:
   name: banner_image
   label: Banner image
   description: This will display on the cover page and Projects page
-- type: field_group_list
-  label: Images
-  name: images
-  fields:
-  - type: file
-    name: before
-    label: Image
+- name: project_images
+  type: image_gallery
+  config: {}
+  label: Project images
 - type: text
   name: layout
   label: layout
   hidden: true
   default: project
-- name: project_images
-  type: image_gallery
-  config: {}
-  label: Project images
 pages:
 - _projects/gregory-2.md
