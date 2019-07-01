@@ -30,19 +30,14 @@ fields:
   - type: file
     name: before
     label: Image
-  - type: text
-    name: caption
-    label: Caption
-  - type: file
-    name: after
-    label: Image
-  - type: text
-    name: caption2
-    label: Caption
 - type: text
   name: layout
   label: layout
   hidden: true
   default: project
+- name: project_images
+  type: image_gallery
+  config: {}
+  label: Project images
 pages:
 - _projects/gregory-2.md
