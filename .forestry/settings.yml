@@ -21,6 +21,10 @@ sections:
 - type: document
   path: _data/social_links.yml
   label: Social Links
+- type: document
+  path: _data/navigation.yml
+  label: Navigation menu
+  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
@@ -37,3 +41,5 @@ build:
   output_directory: _site
   instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future
     --port 8080 --host 0.0.0.0 -d _site
+  preview_docker_image: forestryio/ruby:2.6
+  mount_path: "/srv"
