@@ -39,5 +39,10 @@ fields:
   label: layout
   hidden: true
   default: project
+- name: location
+  type: text
+  config:
+    required: false
+  label: Location
 pages:
 - _projects/montecello.md
