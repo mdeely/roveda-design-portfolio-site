@@ -25,6 +25,5 @@ project_images:
 - "/uploads/APC_2410.jpg"
 - "/uploads/APC_2342.jpg"
 - "/uploads/APC_2274.jpg"
-published: false
 
 ---
