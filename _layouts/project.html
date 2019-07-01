@@ -16,33 +16,12 @@ layout: default
 		</div>	 -->	
 	</div>
 	<div class="project__gallery">
-			{% for image in page.images %}
-				{% if image.before and image.after %}
-					<div class="image__item two-up">
-						<figure class="image__visual before">
-							<img src="{{ image.before }}">
-							<figcaption class="image__caption">{{ image.caption }}</figcaption>
-						</figure>
-						<figure class="image__visual after">
-							<img src="{{ image.after }}">
-							<figcaption class="image__caption">{{ image.after_caption2 }}</figcaption>
-						</figure>
-<!-- 						<div class="image__visual before" style="background-image: url('{{image.before}}')">
-							<div class="image__caption">Before</div>
-						</div>
-						<div class="image__visual after" style="background-image: url('{{image.after}}')">
-							<div class="image__caption">After</div>
-						</div> -->
-					</div>
-				{% else %}
+			{% for image in page.project_images %}
 					<div class="image__item">
-						<figure class="image__visual before">
-							<img src="{{ image.before }}">
-							<figcaption class="image__caption">{{ image.caption }}</figcaption>
+						<figure class="image__visual">
+							<img src="{{ image }}">
 						</figure>
-<!-- 						<div class="image__visual" style="background-image: url('{{image.before}}')">
- -->					</div>
-				{% endif %}
+					</div>
 			{% endfor %}
 
 	</div>
