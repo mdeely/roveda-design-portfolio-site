@@ -7,7 +7,7 @@
 	width: 100%;
 	scroll-snap-type: x mandatory;
 	-webkit-scroll-snap-type: x mandatory;
-
+ 	-webkit-overflow-scrolling: touch;
 }
 
 .project__item__wrapper {
@@ -16,9 +16,16 @@
   	scroll-snap-align: start;
   	-webkit-scroll-snap-align: start;
 
+ 	@media screen and (max-width: $s-viewport) {
+		padding: 24px 32px 32px;
+	}
 
   	&:not(:first-child) {
 		margin-left: -80px;
+
+ 		@media screen and (max-width: $s-viewport) {
+			margin-left: -40px;
+		}
   	} 
 }
 
