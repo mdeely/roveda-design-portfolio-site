@@ -12,7 +12,7 @@ layout: default
 	<div class="project__gallery">
 		{% for image in page.images %}
 			<figure class="project__image__wrapper">
-				<img src="{{ image.image }}">
+				<img alt="{{ image.title }}" title="{{ image.title }}" src="{{ image.image }}">
 				{% if image.caption %}
 					<figcaption>{{image.caption}}</figcaption>
 				{% endif %}
