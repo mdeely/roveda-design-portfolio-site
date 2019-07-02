@@ -34,3 +34,21 @@ button,
 	color: $brown;
 	background-color: transparent;
 }
+
+.iconButton {
+	$iconButtonSize: 44px;
+	height: $iconButtonSize;
+	width: $iconButtonSize;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	border-radius: 50%;
+
+	i {
+		height: $iconButtonSize;
+		width: $iconButtonSize;
+		text-align: center;
+		line-height: $iconButtonSize;
+		font-size: 18px;
+	}
+}
