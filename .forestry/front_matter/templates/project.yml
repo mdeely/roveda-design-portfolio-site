@@ -23,10 +23,6 @@ fields:
   name: banner_image
   label: Banner image
   description: This will display on the cover page and Projects page
-- name: project_images
-  type: image_gallery
-  config: {}
-  label: Project images
 - name: images
   type: field_group_list
   fields:
