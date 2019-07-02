@@ -4,7 +4,9 @@ title: Gregory II
 location: Wilmette, IL
 description: ''
 banner_image: "/uploads/APC_2556.jpg"
-images: []
+images:
+- image: "/uploads/APC_2274.jpg"
+  caption: Caption, sir
 project_images:
 - "/uploads/APC_2547.jpg"
 - "/uploads/APC_2383.jpg"
