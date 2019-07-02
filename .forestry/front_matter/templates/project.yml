@@ -43,7 +43,7 @@ fields:
   config:
     min: 
     max: 
-    labelField: 
+    labelField: caption
   label: images
 - type: text
   name: layout
