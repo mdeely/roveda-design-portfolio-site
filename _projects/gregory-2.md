@@ -14,18 +14,18 @@ images:
 - image: "/uploads/APC_2556.jpg"
   caption: ''
   title: Bathroom - Countertops
-- image: "/uploads/APC_2465.jpg"
-  caption: ''
-  title: Bedroom
 - image: "/uploads/APC_2501.jpg"
   caption: ''
   title: Bathroom - Shower
-- image: "/uploads/APC_2453.jpg"
-  caption: ''
-  title: Bedroom Alt
 - image: "/uploads/APC_2528.jpg"
   caption: ''
   title: Bathtub controls
+- image: "/uploads/APC_2465.jpg"
+  caption: ''
+  title: Bedroom
+- image: "/uploads/APC_2453.jpg"
+  caption: ''
+  title: Bedroom Alt
 - image: "/uploads/APC_2405.jpg"
   caption: ''
   title: Closet
