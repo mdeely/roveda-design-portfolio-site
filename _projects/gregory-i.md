@@ -5,11 +5,14 @@ location: Wilmette, IL
 description: ''
 banner_image: "/uploads/APC_2274.jpg"
 images:
+- image: "/uploads/APC_2297.jpg"
+  title: Living Alt
+  caption: ''
 - image: "/uploads/APC_2327.jpg"
   title: Living Alt 2
   caption: ''
-- image: "/uploads/APC_2297.jpg"
-  title: Living Alt
+- image: "/uploads/APC_2342.jpg"
+  title: Living Rm
   caption: ''
 - image: "/uploads/APC_2274.jpg"
   title: Dining
@@ -19,9 +22,6 @@ images:
   caption: ''
 - image: "/uploads/APC_2238 (1).jpg"
   title: Dining Alt 2
-  caption: ''
-- image: "/uploads/APC_2342.jpg"
-  title: Living Rm
   caption: ''
 - image: "/uploads/APC_2378.jpg"
   title: Guest Bath
