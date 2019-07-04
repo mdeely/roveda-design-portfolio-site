@@ -53,5 +53,5 @@ fields:
   hidden: true
   default: project
 pages:
+- _projects/gregory-ii.md
 - _projects/gregory-i.md
-- _projects/gregory-2.md
