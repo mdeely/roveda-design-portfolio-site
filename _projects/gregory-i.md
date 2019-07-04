@@ -32,6 +32,5 @@ images:
 - image: "/uploads/APC_2379.jpg"
   title: Guest Bath Alt 2
   caption: ''
-published: false
 
 ---
