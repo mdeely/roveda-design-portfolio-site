@@ -5,9 +5,6 @@ location: Wilmette, IL
 description: ''
 banner_image: "/uploads/APC_2274.jpg"
 images:
-- image: "/uploads/APC_2038.jpg"
-  title: Kitchen Alt 6
-  caption: ''
 - image: "/uploads/APC_2297.jpg"
   title: Living Alt
   caption: ''
@@ -46,6 +43,9 @@ images:
   caption: ''
 - image: "/uploads/APC_2126.jpg"
   title: Kitchen Alt 5
+  caption: ''
+- image: "/uploads/APC_2038.jpg"
+  title: Kitchen Alt 6
   caption: ''
 - image: "/uploads/APC_2201.jpg"
   title: Family Rm
