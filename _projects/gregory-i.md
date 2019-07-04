@@ -11,6 +11,9 @@ images:
 - image: "/uploads/APC_2297.jpg"
   title: Living Alt
   caption: ''
+- image: "/uploads/APC_2274.jpg"
+  title: Dining
+  caption: ''
 - image: "/uploads/APC_2259.jpg"
   title: Dining Alt
   caption: ''
