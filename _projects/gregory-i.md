@@ -3,7 +3,7 @@ layout: project
 title: Gregory I
 location: Wilmette, IL
 description: ''
-banner_image: "/uploads/APC_2274.jpg"
+banner_image: "/uploads/APC_2038.jpg"
 images:
 - image: "/uploads/APC_2297.jpg"
   title: Living Alt
