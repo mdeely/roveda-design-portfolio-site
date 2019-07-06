@@ -2,9 +2,10 @@
 layout: default
 ---
 <section class="project">
+	<div class="project__visual" style="background-image: url('{{page.banner_image}}')"></div>
 	<div class="project__title-container">
 		<h1 class="project__title">
-			<a class="iconButton" href="/"><i class="fa fa-arrow-left"></i></a>
+			<a class="iconButton" data-tooltip="Back" href="/"><i class="fa fa-arrow-left"></i></a>
 			{{ page.title }}
 		</h1>
 		<p class="project__location">{{ page.location }}</p>		
@@ -20,6 +21,3 @@ layout: default
 		{% endfor %}
 	</div>
 </section>
-
-<!-- {% include overlay.html %}
- -->

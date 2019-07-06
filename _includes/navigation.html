@@ -3,7 +3,9 @@
 
 <nav class="mainNav">
 	<div class="container">
-		<div class="menu__trigger"><a class="navButton" href="#"><i class="fas fa-bars"></i></a></div>
+		<div class="menu__trigger">
+			<a class="navButton iconButton" data-tooltip="Menu" href="#"><i class="fas fa-bars"></i></a>
+		</div>
 		<a class="logo" href="/">
 			<img src="/assets/img/logo_green_text.svg">
 		</a>
@@ -11,7 +13,7 @@
 			{% for item in social %}
 				{% if item.url %}
 					<li class="social">
-						<a class="navButton" href="{{ item.url }}">
+						<a class="iconButton" data-tooltip="{{item.label}}" href="{{ item.url }}">
 							<img src="{{item.asset_src}}">
 						</a>
 					</li>

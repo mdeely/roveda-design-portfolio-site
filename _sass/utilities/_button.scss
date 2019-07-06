@@ -36,7 +36,6 @@ button,
 }
 
 .iconButton {
-	$iconButtonSize: 44px;
 	height: $iconButtonSize;
 	width: $iconButtonSize;
 	display: flex;
@@ -50,5 +49,13 @@ button,
 		text-align: center;
 		line-height: $iconButtonSize;
 		font-size: 18px;
+	}
+
+	&:hover {
+		background-color: rgba(black, .08);
+	}
+
+	&:active {
+		background-color: rgba(black, .15);
 	}
 }

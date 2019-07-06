@@ -4,6 +4,8 @@ $brown: #B28357;
 $gold: #AE7E5C;
 $light_gray: #787472;
 
+$pageBackground: #F4F4F4;
+
 // Color assignments
 $brand: $forest_green;
 $brand--shadow: $forest_green--shadow;
@@ -12,8 +14,9 @@ $brand--shadow: $forest_green--shadow;
 $container_max_width: 100%;
 $default_margin: 20px;
 $default_section_padding_top: 150px;
+$iconButtonSize: 44px;
 
-$navHeight: 20vh;
+$navHeight: 15vh;
 $projectListHeight: 100vh - $navHeight;
 
 // Effects
