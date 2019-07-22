@@ -1,32 +1,91 @@
+$aboutWidth: 45%;
+$projectItemWrapperWidth: 100% - $aboutWidth;
+$projectsTopPadding: 50px;
+
+$breakpoint: $m-viewport;
+
+.projects__page {
+	display: flex;
+	flex-direction: row;
+	// height: 100vh - $navHeight;
+
+	@media screen and (max-width: $breakpoint) {
+		flex-direction: column-reverse;
+	}
+}
+
+.projects__title {
+	font-size: 64px;
+	color: $gold;
+	line-height: 1.2;
+
+	& + .projects__description {
+		margin-top: 24px;
+	}
+}
+
+.projects__description {
+	font-size: 14px;
+	color: $light_gray;
+}
+
 .project__list {
 	display: flex;
 	flex-direction: row;
 	margin: 0 auto;
 	overflow-x: scroll;
 	height: $projectListHeight;
-	width: 100%;
+	width: $projectItemWrapperWidth;
 	scroll-snap-type: x mandatory;
 	-webkit-scroll-snap-type: x mandatory;
- 	-webkit-overflow-scrolling: touch;
+	-webkit-overflow-scrolling: touch;
+	position: relative;
+	padding: 24px 0 40px 0;
+
+	 
+	 @media screen and (max-width: $breakpoint) {
+		width: 100%;
+		padding-left: 0;
+		height: 100vh - $navHeight - 10vh;
+		max-height: 500px;
+	}
 }
 
 .project__item__wrapper {
-	min-width: 100%;
-	padding: 24px 64px 64px;
+	padding: $projectsTopPadding 32px;
   	scroll-snap-align: start;
-  	-webkit-scroll-snap-align: start;
+	-webkit-scroll-snap-align: start;
+	min-width: 55%;
 
- 	@media screen and (max-width: $s-viewport) {
-		padding: 24px 32px 32px;
+ 	@media screen and (max-width: $breakpoint) {
+		padding: 24px 32px 0;
+		min-width: 90vw;
 	}
 
-  	&:not(:first-child) {
-		margin-left: -80px;
+  	&:first-child {
+		// padding-left: 0;
 
- 		@media screen and (max-width: $s-viewport) {
-			margin-left: -40px;
+		@media screen and (max-width: $breakpoint) {
+			padding: 24px 32px 0;
 		}
-  	} 
+	}
+}
+	  
+.about {
+	max-width: $aboutWidth;
+	padding: $projectsTopPadding/2 8vw $projectsTopPadding/2 9vw;
+
+	@media screen and (max-width: $breakpoint) {
+		max-width: 100%;
+		padding: 24px;	
+		background-color: $brand;
+		color: white;
+
+		& > * {
+			color: white;
+			opacity: .8;
+		}
+	}
 }
 
 .project__item {
@@ -35,33 +94,23 @@
     display: block;
     height: 100%;
     background-position: center;
-	box-shadow: 0 0 22px rgba(0,0,0,.2);
-    border-radius: 5px;
+	box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.16), 0 12px 32px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
     width: 100%;
     transition: transform .1s ease-in-out;
 
     &:after {
     	content: none;
     }
-
-    &:hover {
-    	.project__info {
-    		transform: scale(1.05);
-    	}
-    }
 }
 
 .project__info {
 	position: absolute;
-	top: 64px;
+	bottom: 32px;
 	right: 0;
+	left:0;
 	background-color: rgba(white, .75);
     padding: 16px;
-    box-shadow: 0 3px 60px rgba(black,.2);
-    transition: transform .2s ease-in-out;
-    transform-origin: right center;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
 }
 
 .project__title {
