@@ -21,7 +21,7 @@ $projectImagePadding: ($projectHeight * $projectImageCalc);
 	display: block;
 	display: flex;
 	flex-direction: column;
-	padding: $projectItemPadding;
+	padding: 12%;
 	align-content: center;
 
 	@media screen and (min-width: $s-viewport) {
