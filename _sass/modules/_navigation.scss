@@ -2,51 +2,18 @@ nav {
 	position: sticky;
 	top: 0;
 	color: $brand;
-	padding-top: $navHeight/3;
+	// padding-top: $navHeight/3;
 	height: $navHeight;
 	z-index: 9999;
-
-	@media only screen and (max-width: $s-viewport) {
-		height: 15vh;
-
-		.social {
-			display: none;
-		}
-	}
-
-	&.open {
-		.menuOptions {
-			display: flex;
-		}
-
-		.navButton {
-			color: white;
-			filter: brightness(20);
-		}
-
-		.social {
-			display: none;
-		}
-	}
-
-	// &:before {
-	// 	content: "";
-	// 	position: absolute;
-	// 	pointer-events: none;
-	// 	left: 0;
-	// 	right: 0;
-	// 	width: 100%;
-	// 	top:0;
-	// 	bottom: 0;
-	// }
+	background-color: white;
+	box-shadow: 0 4px 12px rgba(0,0,0,.08);
 
 	.container {
 		display: flex;
 		flex-direction: row;
 		justify-content: left;
 		align-items: center;
-		padding-left: 40px;
-		padding-right: 40px;	
+		height: $navHeight;	
 
 		> * {
 			pointer-events: initial;
@@ -63,22 +30,22 @@ nav {
 	}
 
 	.logo {
-	    position: absolute;
-	    left: 50%;
-	    transform: translate(-50%, 0);
 	    z-index: 9999;
-	    background-color: rgba($pageBackground,.85);
-	    border-radius: 50%;
-		width: 100px;
-		height: 100px;
+		border-top-right-radius: ($navHeight/2);
+		border-bottom-right-radius: ($navHeight/2);
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		-webkit-backdrop-filter: blur(10px);
+		background-color:  $forest_green--shadow;
+		height: $navHeight;
+		padding-left: 24px;
+		padding-right: 48px;
+		color: white;
 
 		img {
-			width: 42px;
-			min-width: 42px;
+			width: 24px;
+			min-width: 24px;
 		}
 
 		&:after {
@@ -87,6 +54,22 @@ nav {
 
 		&:before {
     		left: -25px;
+		}
+
+		@media screen and (max-width: $s-viewport) {
+			padding-right: 32px;
+		}
+	}
+
+	.business__title {
+		font-size:  12px;
+		letter-spacing: 1px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-left: 24px;
+
+		@media screen and (max-width: $s-viewport) {
+			display: none;
 		}
 	}
 
@@ -99,17 +82,27 @@ nav {
 		margin-left: auto;
 		margin-right: 0;
 
+		&.optionsList {
+			&:after {
+				content: "";
+				height: $navHeight/2.5;
+				opacity: .5;
+				border-left: 1px solid  $forest_green--shadow;
+			}
+		}
+
 		li {
-			margin-right: 15px;
-			margin-left: 15px;
 
 			a {
 				font-weight: 600;
 				font-size: 14px;
-				letter-spacing: 2.5px;
-				position: relative;
-				text-transform: uppercase;
-				color: white;
+				letter-spacing: .5px;
+				color: $forest_green--shadow;
+				height: $navHeight;
+				display: block;
+				padding-right: 16px;
+				padding-left: 16px;
+				line-height: $navHeight;
 
 				&:after {
 					background-color: $brand;
@@ -123,14 +116,14 @@ nav {
 						width: 100%;
 					}
 				}
+
+				&:hover {
+					background-color: rgba(black, .05);
+;				}
 			}
 
-			&:not(.social) {
-				margin-left: 40px;
-
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right:  32px;
 			}
 
 			&.social {
@@ -161,88 +154,4 @@ nav {
 			margin: initial;
 		}
 	}
-
-	.menuOptions {
-		position: fixed;
-		background-color: $brand;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		color: white;
-		display: none;
-		z-index: 999;
-		align-items: center;
-		justify-content: center;
-
-		ul {
-			margin: initial;
-			flex-direction: column;
-
-			li {
-				margin: initial;
-				margin: 16px auto !important;
-
-				a {
-					margin: initial;
-				}
-			}
-		}
-	}
-
-
-	// .mobile__trigger {
-	// 	display: none;
-	// 	margin-left: auto;
-	// 	margin-top: 32px;
-	// 	font-size: 26px;
-
-	// 	a {
-	// 		color: $brand;
-
-	// 		&:after {
-	// 			background-color: $brand;
-	// 		}
-	// 	}
-	// }
 }
-
- // @media screen and (min-width: $m-viewport) {
-	// nav {
-
-	// 	ul {
-	// 		margin-top: 64px;
-	// 	}
-
-	// 	.container {
-	// 		padding-left: 80px;
-	// 		padding-right: 80px;
-
-	// 		.logo {
-	// 			margin-top: 64px;
-	// 		}
-	// 	}
-	// }
- // }
-
-
- // @media screen and (min-width: $xs-viewport) {
-
-	// nav {
-
-	// 	ul {
-	// 		display: flex;
-
-	// 		li {
-	// 			margin-right: 20px;
-	// 			margin-left: 20px;
-
-	// 		}
-	// 	}
-	// }
-
-	// .mobile__trigger {
-	// 	display: none;
-	// }
- // }
-

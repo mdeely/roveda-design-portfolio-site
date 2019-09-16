@@ -3,23 +3,14 @@
 
 <nav class="mainNav">
 	<div class="container">
-		<div class="menu__trigger">
+		<!-- <div class="menu__trigger">
 			<a class="navButton iconButton" data-tooltip="Menu" href="#"><i class="fas fa-bars"></i></a>
-		</div>
+		</div> -->
 		<a class="logo" href="/">
-			<img src="/assets/img/logo_green_text.svg">
+			<img src="/assets/img/logo_white_text.svg">
+			<div class="business__title">Roveda Design</div>
 		</a>
 		<ul class="nav__menu">
-			{% for item in social %}
-				{% if item.url %}
-					<li class="social">
-						<a class="iconButton" data-tooltip="{{item.label}}" href="{{ item.url }}">
-							<img src="{{item.asset_src}}">
-						</a>
-					</li>
-				{% endif %}
-			{% endfor %}
-
 			<div class="menuOptions">
 				<ul class="optionsList">
 					{% for item in primary %}
@@ -37,6 +28,15 @@
 					{% endfor %}
 				</ul>
 			</div>
+			{% for item in social %}
+				{% if item.url %}
+					<li class="social">
+						<a class="iconButton" data-tooltip="{{item.label}}" href="{{ item.url }}">
+							<img src="{{item.asset_src}}">
+						</a>
+					</li>
+				{% endif %}
+			{% endfor %}
 		</ul>
 	</div>
 </nav>
