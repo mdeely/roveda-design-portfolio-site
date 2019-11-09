@@ -5,6 +5,7 @@ fields:
 - type: file
   name: profile_image
   label: Profile image
+  hidden: true
 - type: text
   name: title
   label: Title
