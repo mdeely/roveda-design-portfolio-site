@@ -2,15 +2,23 @@
 label: About
 hide_body: false
 fields:
+- type: file
+  name: profile_image
+  label: Profile image
 - type: text
   name: title
   label: Title
-- type: text
-  name: description
+  config:
+    required: true
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
   label: Description
 - type: text
   name: permalink
   label: Permalink
-- type: file
-  name: profile_image
-  label: Profile image
