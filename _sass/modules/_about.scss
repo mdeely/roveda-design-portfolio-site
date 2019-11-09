@@ -1,0 +1,19 @@
+$profileImageSize: 64px;
+
+.about__wrapper {
+    max-width: 600px;
+    margin: 56px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.about__profile-img {
+    height: $profileImageSize;
+    width: $profileImageSize;
+    border-radius: $profileImageSize * 2;
+}
+
+.about__description {
+}

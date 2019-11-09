@@ -14,9 +14,11 @@
 			<div class="menuOptions">
 				<ul class="optionsList">
 					{% for item in primary %}
-						<li>
-							<a href="{{ item.url }}">{{ item.label }}</a>
-						</li>
+						{% if item.url.size > 0 %}
+							<li>
+								<a href="{{ item.url }}">{{ item.label }}</a>
+							</li>
+						{% endif %}
 					{% endfor %}
 
 					<!-- {% for item in social %}

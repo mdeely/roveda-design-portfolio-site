@@ -1,5 +1,7 @@
 primary:
   - label: Projects
     url: "/"    
+  - label: About
+    url: ''
   - label: Houzz
     url: "https://www.houzz.com/pro/rovedadesign"
