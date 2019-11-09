@@ -61,7 +61,7 @@ $projectItemPadding: 32px;
 .project__link {
 	margin-top: auto;
 	margin-bottom: $projectItemPadding;
-	width: 100%;
-	max-width: calc(100% - $projectItemPadding);
+	width: calc(100% - ( #{$projectItemPadding} * 2) );
+	max-width: 360px;
 	box-shadow: 0 2px 5px rgba(black, .2);
 }
