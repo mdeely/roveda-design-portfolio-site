@@ -19,17 +19,17 @@
 						</li>
 					{% endfor %}
 
-					{% for item in social %}
-						{% if item.url %}
+					<!-- {% for item in social %}
+						{% if item.url.size > 0 %}
 							<li>
 								<a href="{{ item.url }}">{{item.label}}</a>
 							</li>
 						{% endif %}
-					{% endfor %}
+					{% endfor %} -->
 				</ul>
 			</div>
 			{% for item in social %}
-				{% if item.url %}
+				{% if item.url.size > 0 %}
 					<li class="social">
 						<a class="iconButton" data-tooltip="{{item.label}}" href="{{ item.url }}">
 							<img src="{{item.asset_src}}">

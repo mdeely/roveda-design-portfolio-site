@@ -5,16 +5,12 @@ permalink: page.permalink
 <!-- <section class="projects"> -->
 	<ul class="project__list">
 		{% for project in site.projects %}
-			<li class="project__item__wrapper" {% if forloop.index == 3 %}id="middle"{%endif%}>
-				<div class="project__item">
-					<div class="project__visual__blur" style="background-image: url('../{{project.banner_image}}')"></div>
-					<a class="project__info" href="{{project.url}}">
-						<h2 class="project__title">{{project.title}} →</h2>
-						<p class="project__location">{{project.location}}</p>
-					</a>
-					<div class="project__image" style="background-image: url('../{{project.banner_image}}')"></div>
-<!-- 					<div class="button project__anchor">Explore</div> -->
+			<li class="project__item" style="background-image: url('../{{project.banner_image}}')">
+				<div class="project__info">
+					<h2 class="project__title">{{project.title}}</h2>
+					<p class="project__location">{{project.location}}</p>
 				</div>
+				<a href="{{project.url}}" class="project__link button">View project</a>
 			</li>
 		{% endfor %}
 	</ul>
