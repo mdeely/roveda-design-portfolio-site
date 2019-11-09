@@ -8,7 +8,7 @@ sections:
   path: ''
   label: Pages
   create: documents
-  match: "**/*"
+  match: "*.md"
   exclude: _projects/**/*
   templates:
   - cover
