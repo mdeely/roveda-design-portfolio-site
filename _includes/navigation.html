@@ -11,8 +11,9 @@
 			<div class="business__title">Roveda Design</div>
 		</a>
 		<ul class="nav__menu">
-			<div class="menuOptions">
-				<ul class="optionsList">
+			<div class="nav__menu-mobile">
+				<div class="nav__menu-mobile-trigger iconButton"><i class="fa fa-bars"></i></div>
+				<ul class="nav__menu-list">
 					{% for item in primary %}
 						{% if item.url.size > 0 %}
 							<li>

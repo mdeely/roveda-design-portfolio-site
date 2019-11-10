@@ -145,3 +145,43 @@ nav {
 		}
 	}
 }
+
+// .nav__menu-list {
+	
+// }
+
+.nav__menu-mobile {
+	display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav__menu-mobile-trigger {
+	display: none;
+	margin-right: 16px;
+}
+
+@media screen and (max-width: $s-viewport) {
+	.nav__menu-mobile-trigger {
+		display: block;
+	}
+
+	.nav__menu-list {
+		display: none;
+		position: fixed;
+		top: $navHeight;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: white;
+		border-top: 1px solid lighten($light_gray, 40%);
+
+		li:last-child {
+			margin-right: 0;
+		}
+
+		&.open {
+			display: block;
+		}
+	}
+}
