@@ -58,28 +58,21 @@
 		flex-direction: row;
 		overflow-x: scroll;
 		overflow-y: hidden;
-		align-items: flex-end;
 		scroll-snap-type: x mandatory;
 		padding-top: 48px;
-		-webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
+		-webkit-overflow-scrolling: touch;
 	}
 
 	.project__image__wrapper {
 		position: relative;
 		margin-bottom: 56px;
-		margin-right: 4vw;
-		margin-left: 4vw;
-		// min-height: 50vh;
-		// max-height: calc(80vh - #{$navHeight});
-		// min-width: 50vw;
-		// max-width: calc(100% - 32px);
 		scroll-snap-align: center;
+		padding: 0 24px;
 
 		img {
 			border-radius: 10px;
 			box-shadow: 0 4px 60px rgba(0,0,0,.18);
-			height: 50vh;
-			min-width: auto;
+			height: 60vh;
 			max-width: initial;
 		}
 
@@ -89,6 +82,14 @@
 		    text-align: center;
 		    opacity: .75;
 		    max-width: 60%;
+		}
+	}
+
+	@media screen and (max-width: $m-viewport) {
+
+		.project__image__wrapper img {
+			height: auto;
+			max-width: calc(100vw - 32px);
 		}
 	}
 }
