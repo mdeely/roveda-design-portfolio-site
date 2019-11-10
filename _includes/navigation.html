@@ -17,7 +17,11 @@
 					{% for item in primary %}
 						{% if item.url.size > 0 %}
 							<li>
-								<a href="{{ item.url }}">{{ item.label }}</a>
+								{% if page.url == item.url %}
+									<a href="{{ item.url }}" class="active">{{ item.label }}</a>
+								{% else %}
+									<a href="{{ item.url }}" >{{ item.label }}</a>
+								{% endif %}
 							</li>
 						{% endif %}
 					{% endfor %}
