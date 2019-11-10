@@ -3,7 +3,7 @@ $projectItemPadding: 32px;
 .project__list {
 	max-width: 800px;
 	width: 100%;
-	padding: 16px;
+	padding: 32px;
 	margin: 40px auto;
 }
 
@@ -64,4 +64,14 @@ $projectItemPadding: 32px;
 	width: calc(100% - ( #{$projectItemPadding} * 2) );
 	max-width: 360px;
 	box-shadow: 0 2px 5px rgba(black, .2);
+}
+
+@media screen and (max-width: $s-viewport) {
+	.project__list {
+		margin-top: 0;
+	}
+
+	.project__item {
+		margin-bottom: 32px;
+	}
 }
