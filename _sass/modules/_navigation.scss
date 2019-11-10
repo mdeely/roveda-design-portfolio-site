@@ -112,7 +112,7 @@ nav {
 
 				&:hover {
 					background-color: rgba(black, .05);
-;				}
+				}
 			}
 
 			&:last-child {
@@ -149,10 +149,6 @@ nav {
 	}
 }
 
-// .nav__menu-list {
-	
-// }
-
 .nav__menu-mobile {
 	display: flex;
     align-items: center;
@@ -165,6 +161,21 @@ nav {
 }
 
 @media screen and (max-width: $s-viewport) {
+	nav {
+		ul {
+			li {
+				a {
+					&.active {
+						text-decoration: underline;
+
+						&:after {
+							content: none;
+						}
+					}
+				}
+			}
+		}
+	}
 	.nav__menu-mobile-trigger {
 		display: block;
 	}
