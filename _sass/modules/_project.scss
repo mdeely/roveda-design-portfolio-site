@@ -1,28 +1,10 @@
 .project {
 
-	// .project__visual {
-	// 	content: "";
-	// 	position: fixed;
-	// 	width: 100vw;
-	// 	height: 100vh;
-	// 	background-size: cover;
-	// 	background-repeat: no-repeat;
-	// 	background-position: center top;
-	// 	opacity: .08;
-	//     left: 0;
-	//     right: 0;
-	//     top: 0;
-	//     bottom: 0;
-	//     z-index: 1;
-	//     filter: blur(20px);
-	//     z-index: 0;
-	// }
-
 	.project__title-container {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
-		margin-bottom: 64px;
+		margin-bottom: 32px;
 
 		.iconButton {
 			color: $gold;
@@ -66,22 +48,39 @@
 	}
 
 	.project__gallery {
-		max-width: 600px;
 		height: auto;
 		width: 100%;
 		margin: 0 auto;
 		padding: 0 24px;
 		z-index: 10;
 		position: relative;
+		display: flex;
+		flex-direction: row;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		align-items: flex-end;
+		scroll-snap-type: x mandatory;
+		padding-top: 48px;
+		-webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
 	}
 
 	.project__image__wrapper {
 		position: relative;
-		margin: 56px 0;
+		margin-bottom: 56px;
+		margin-right: 4vw;
+		margin-left: 4vw;
+		// min-height: 50vh;
+		// max-height: calc(80vh - #{$navHeight});
+		// min-width: 50vw;
+		// max-width: calc(100% - 32px);
+		scroll-snap-align: center;
 
 		img {
 			border-radius: 10px;
 			box-shadow: 0 4px 60px rgba(0,0,0,.18);
+			height: 50vh;
+			min-width: auto;
+			max-width: initial;
 		}
 
 		figcaption {
@@ -92,116 +91,4 @@
 		    max-width: 60%;
 		}
 	}
-
-	// .project__next,
-	// .project__prev {
-	// 	position: relative;
-	// 	width: 50px;
-	// 	background-color: blue;
-	// 	z-index: 1;
-
-	// 	&.link {
-	// 		position: absolute;
-	// 		bottom: -24px;
-	// 		z-index: 2;
-	// 		background-color: rgba(white, .95);
-	// 		padding: 16px 32px;
-	// 		width: auto;
-	// 		box-shadow: $shadow__logo-light;
-	// 	}
-	// }
-
-	// .project__next {
-	// 	&.link {
-	// 		right: 0;
-	// 	}
-	// }
-
-	// .image__list {
-	// 	padding: 70px 2vw;
-	// 	text-align: center;
-	// 	margin: 0 auto;
-	// }
-
-	// $image_offset_h: 10px;
-	// $image_offset_v: 60px;
-	// $caption_offset: 25px;
-
-	// .image__item {
-	// 	margin: 70px auto;
-	// 	max-width: 800px;
-
-
-	// 	.image__visual {
-	// 		border-radius: 4px;
-	// 		max-width: 100%;
-	// 		background-position: top center;
-	// 		background-repeat: no-repeat;
-	// 		background-size: contain;
-	// 		position: relative;
-	// 		max-height: 80vh;
-	// 		text-align: center;
-	// 		padding: 0 1vw;
-
-	// 		img {
-	// 			max-height: 80vh;
-	// 			max-width: 800px;
-	// 		}
-	// 	}
-
-	// 	.image__caption {
-	// 		color: $gold;
-	// 		font-weight: 600;
-	// 		margin-top: 24px;
-	// 	}
-
-	// 	&.two-up {
-	// 		display: flex;
-	// 		flex-direction: row;
-	// 		margin-top: 70px + $caption_offset*4;
-
-	// 		.image__visual { 
-	// 			flex: 1;
-
-	// 			img {
-	// 				max-width: 100%;
-	// 			}
-
-	// 			&.before {
-	// 				margin-right: -$image_offset_h;
-
-	// 				.image__caption {
-	// 					width: 100%;
-	// 					text-align: right;
-	// 				}
-	// 			}
-
-	// 			&.after {
-	// 				margin-top: $image_offset_v;
-	// 				margin-left: -$image_offset_h;
-	// 				// padding-top: $image_offset_v;
-
-	// 				.image__caption {
-	// 					left: $image_offset_h*3;
-	// 				}
-	// 			}
-	// 		}
-
-	// 		.image__caption {
-	// 			position: absolute;
-	// 			top: -$caption_offset;
-	// 			margin-top: 0;
-	// 		}
-	// 	}
-	// }
 }
-
-// @media screen and (min-width: $s-viewport) {
-// 	.project {
-
-// 		.project__title-container {
-// 			max-width: 520px;
-// 			min-width: initial;
-// 		}
-// 	}
-// }
